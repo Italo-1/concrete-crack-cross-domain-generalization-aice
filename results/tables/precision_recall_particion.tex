@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Precision, recall and F1 of the crack class by directional partition (mean $\pm$ SD over cells), share of errors that are false negatives, and the paired precision - recall difference per training run with Wilcoxon signed-rank test (Holm over the three out-of-domain partitions).}
+\label{tab:precision-recall}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Partition & n & Precision & Recall & F1 & FN share of errors (\%) & P - R (runs) & p (Holm) \\
+\midrule
+Within-domain & 48 & 0.886 $\pm$ 0.073 & 0.851 $\pm$ 0.094 & 0.867 $\pm$ 0.082 & 57.900 & -- & -- \\
+Cross-surface & 72 & 0.807 $\pm$ 0.085 & 0.577 $\pm$ 0.154 & 0.654 $\pm$ 0.092 & 72.700 & +0.230 & $<$0.0001 \\
+SDNET to METU & 36 & 0.870 $\pm$ 0.092 & 0.728 $\pm$ 0.196 & 0.782 $\pm$ 0.149 & 72.400 & +0.142 & $<$0.0001 \\
+METU to SDNET & 36 & 0.857 $\pm$ 0.069 & 0.320 $\pm$ 0.178 & 0.437 $\pm$ 0.164 & 91.700 & +0.538 & 0.0005 \\
+\bottomrule
+\end{tabular}
+\end{table}

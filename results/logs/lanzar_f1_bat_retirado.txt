@@ -1,0 +1,26 @@
+@echo off
+rem F1 completo, en serie (nunca dos entrenamientos a la vez en la GPU de 6 GB).
+rem Lanzar desacoplado:  start "" /min cmd /c src\lanzar_f1.bat
+rem Progreso: results\logs\lanzar_f1.log y los logs de cada script.
+cd /d C:\lineaB\06-aice-P1
+set CUBLAS_WORKSPACE_CONFIG=:4096:8
+set PYTHONIOENCODING=utf-8
+set PY=C:\lineaB\.venv\Scripts\python.exe
+set LOG=results\logs\lanzar_f1.log
+if not exist results\logs mkdir results\logs
+
+echo %date% %time% INICIO E1 (tres condiciones, particion original)>> %LOG%
+%PY% src\03_experiment.py --condicion todo --particion original > results\logs\e1_stdout.txt 2>&1
+echo %date% %time% FIN E1, codigo %errorlevel%>> %LOG%
+
+echo %date% %time% INICIO E1b (base, particion agrupada)>> %LOG%
+%PY% src\03_experiment.py --condicion baseline --particion agrupada > results\logs\e1b_stdout.txt 2>&1
+echo %date% %time% FIN E1b, codigo %errorlevel%>> %LOG%
+
+echo %date% %time% INICIO E2 (sonda lineal)>> %LOG%
+%PY% src\03b_sonda_lineal.py > results\logs\e2_stdout.txt 2>&1
+echo %date% %time% FIN E2, codigo %errorlevel%>> %LOG%
+
+echo %date% %time% INICIO E3 (multi-fuente)>> %LOG%
+%PY% src\03c_multifuente.py > results\logs\e3_stdout.txt 2>&1
+echo %date% %time% FIN E3, codigo %errorlevel%>> %LOG%

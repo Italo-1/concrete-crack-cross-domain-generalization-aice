@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\caption{Pairwise comparison of the four directional partitions: Welch's t-test with Holm correction, training run (architecture x source x seed) as unit, averaging the cells each run contributes to a partition.}
+\label{tab:direccional-welch-corrida}
+\begin{tabular}{llrrrrr}
+\toprule
+Group 1 & Group 2 & n 1 & n 2 & Mean diff. & t (Welch) & p (Holm) \\
+\midrule
+Within-domain & Cross-surface & 48 & 36 & 0.213 & 12.659 & $<$0.0001 \\
+ & SDNET to METU & 48 & 36 & 0.085 & 3.109 & 0.0031 \\
+ & METU to SDNET & 48 & 12 & 0.430 & 22.291 & $<$0.0001 \\
+Cross-surface & SDNET to METU & 36 & 36 & -0.128 & -4.645 & $<$0.0001 \\
+ & METU to SDNET & 36 & 12 & 0.217 & 11.182 & $<$0.0001 \\
+SDNET to METU & METU to SDNET & 36 & 12 & 0.345 & 11.862 & $<$0.0001 \\
+\bottomrule
+\end{tabular}
+\end{table}

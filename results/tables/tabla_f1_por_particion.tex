@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{F1-score of the crack class (mean $\pm$ SD over cells and 3 seeds) by architecture and directional transfer partition, baseline condition. Best value per column in bold.}
+\label{tab:f1-particion}
+\begin{tabular}{lrrrr}
+\toprule
+Architecture & Within-domain & Cross-surface & SDNET to METU & METU to SDNET \\
+\midrule
+ResNet-18 & \textbf{0.882 $\pm$ 0.075} & 0.692 $\pm$ 0.086 & \textbf{0.875 $\pm$ 0.072} & \textbf{0.456 $\pm$ 0.183} \\
+EfficientNet-B0 & 0.854 $\pm$ 0.094 & 0.588 $\pm$ 0.090 & 0.706 $\pm$ 0.159 & 0.405 $\pm$ 0.151 \\
+MobileNetV3-Small & 0.869 $\pm$ 0.081 & 0.635 $\pm$ 0.092 & 0.798 $\pm$ 0.123 & 0.435 $\pm$ 0.154 \\
+ViT-Tiny & 0.864 $\pm$ 0.084 & \textbf{0.703 $\pm$ 0.051} & 0.749 $\pm$ 0.183 & 0.453 $\pm$ 0.190 \\
+\bottomrule
+\end{tabular}
+\end{table}

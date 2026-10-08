@@ -1,0 +1,57 @@
+17:01:33 | Particion 'original', condiciones ['baseline'], 1 arq. x 1 semillas x 4 origenes, 12 epocas max., lote 64
+17:01:33 | [resnet18/baseline/original/s42] entrenando en 'sdnet_D'
+17:01:53 | epoca  0 | perdida 0.6190 | f1 val 0.7174 | exactitud 0.6967
+17:02:08 | epoca  1 | perdida 0.4581 | f1 val 0.6977 | exactitud 0.7617
+17:02:24 | epoca  2 | perdida 0.3718 | f1 val 0.7619 | exactitud 0.8000
+17:02:39 | epoca  3 | perdida 0.3149 | f1 val 0.7701 | exactitud 0.8000
+17:02:54 | epoca  4 | perdida 0.2727 | f1 val 0.7845 | exactitud 0.8150
+17:03:10 | epoca  5 | perdida 0.2243 | f1 val 0.7733 | exactitud 0.8017
+17:03:24 | epoca  6 | perdida 0.1782 | f1 val 0.7868 | exactitud 0.8167
+17:03:39 | epoca  7 | perdida 0.1413 | f1 val 0.8078 | exactitud 0.8183
+17:03:53 | epoca  8 | perdida 0.1249 | f1 val 0.7927 | exactitud 0.8100
+17:04:07 | epoca  9 | perdida 0.1148 | f1 val 0.8000 | exactitud 0.8133
+17:04:21 | epoca 10 | perdida 0.1075 | f1 val 0.8052 | exactitud 0.8250
+17:04:21 | parada temprana en la epoca 10 (paciencia 3)
+17:04:21 | [resnet18/baseline/original/s42] 'sdnet_D': mejor F1 val 0.8078 en la epoca 7, 11 epocas, 2.8 min
+17:04:30 |     F1 por destino: sdnet_D 0.797, sdnet_P 0.609, sdnet_W 0.708, metu 0.772
+17:04:30 | [resnet18/baseline/original/s42] entrenando en 'sdnet_P'
+17:04:47 | epoca  0 | perdida 0.6244 | f1 val 0.7617 | exactitud 0.7017
+17:04:55 | epoca  1 | perdida 0.4116 | f1 val 0.8185 | exactitud 0.8367
+17:05:08 | epoca  2 | perdida 0.2901 | f1 val 0.8358 | exactitud 0.8533
+17:05:23 | epoca  3 | perdida 0.2200 | f1 val 0.8648 | exactitud 0.8733
+17:05:39 | epoca  4 | perdida 0.1714 | f1 val 0.8729 | exactitud 0.8767
+17:05:54 | epoca  5 | perdida 0.1294 | f1 val 0.8704 | exactitud 0.8700
+17:06:08 | epoca  6 | perdida 0.0967 | f1 val 0.8750 | exactitud 0.8767
+17:06:23 | epoca  7 | perdida 0.0704 | f1 val 0.8795 | exactitud 0.8817
+17:06:38 | epoca  8 | perdida 0.0622 | f1 val 0.8832 | exactitud 0.8867
+17:06:52 | epoca  9 | perdida 0.0540 | f1 val 0.8855 | exactitud 0.8883
+17:07:07 | epoca 10 | perdida 0.0497 | f1 val 0.8836 | exactitud 0.8867
+17:07:23 | epoca 11 | perdida 0.0459 | f1 val 0.8816 | exactitud 0.8850
+17:07:23 | [resnet18/baseline/original/s42] 'sdnet_P': mejor F1 val 0.8855 en la epoca 9, 12 epocas, 2.9 min
+17:07:32 |     F1 por destino: sdnet_D 0.718, sdnet_P 0.868, sdnet_W 0.594, metu 0.937
+17:07:33 | [resnet18/baseline/original/s42] entrenando en 'sdnet_W'
+17:07:51 | epoca  0 | perdida 0.5874 | f1 val 0.7722 | exactitud 0.7483
+17:08:08 | epoca  1 | perdida 0.4004 | f1 val 0.8029 | exactitud 0.8200
+17:08:22 | epoca  2 | perdida 0.3042 | f1 val 0.7985 | exactitud 0.8233
+17:08:36 | epoca  3 | perdida 0.2397 | f1 val 0.8155 | exactitud 0.8017
+17:08:51 | epoca  4 | perdida 0.1893 | f1 val 0.8314 | exactitud 0.8317
+17:09:06 | epoca  5 | perdida 0.1526 | f1 val 0.8562 | exactitud 0.8583
+17:09:20 | epoca  6 | perdida 0.1154 | f1 val 0.8576 | exactitud 0.8650
+17:09:34 | epoca  7 | perdida 0.0967 | f1 val 0.8187 | exactitud 0.8250
+17:09:49 | epoca  8 | perdida 0.0790 | f1 val 0.8339 | exactitud 0.8400
+17:10:04 | epoca  9 | perdida 0.0686 | f1 val 0.8452 | exactitud 0.8517
+17:10:04 | parada temprana en la epoca 9 (paciencia 3)
+17:10:04 | [resnet18/baseline/original/s42] 'sdnet_W': mejor F1 val 0.8576 en la epoca 6, 10 epocas, 2.5 min
+17:10:14 |     F1 por destino: sdnet_D 0.770, sdnet_P 0.781, sdnet_W 0.854, metu 0.846
+17:10:14 | [resnet18/baseline/original/s42] entrenando en 'metu'
+17:10:30 | epoca  0 | perdida 0.3184 | f1 val 0.9917 | exactitud 0.9917
+17:10:46 | epoca  1 | perdida 0.0251 | f1 val 0.9967 | exactitud 0.9967
+17:11:00 | epoca  2 | perdida 0.0088 | f1 val 1.0000 | exactitud 1.0000
+17:11:15 | epoca  3 | perdida 0.0049 | f1 val 0.9983 | exactitud 0.9983
+17:11:29 | epoca  4 | perdida 0.0039 | f1 val 0.9983 | exactitud 0.9983
+17:11:44 | epoca  5 | perdida 0.0040 | f1 val 0.9983 | exactitud 0.9983
+17:11:44 | parada temprana en la epoca 5 (paciencia 3)
+17:11:44 | [resnet18/baseline/original/s42] 'metu': mejor F1 val 1.0000 en la epoca 2, 6 epocas, 1.5 min
+17:11:54 |     F1 por destino: sdnet_D 0.324, sdnet_P 0.715, sdnet_W 0.312, metu 1.000
+17:11:54 | [resnet18/baseline/s42] 4 origenes en 10.4 min
+17:11:54 | 03_experiment.py terminado en 10.4 min.

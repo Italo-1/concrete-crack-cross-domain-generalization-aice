@@ -1,0 +1,16 @@
+{
+  "celdas": 16,
+  "celdas_distintas_tp": 0,
+  "celdas_distintas_tn": 0,
+  "celdas_distintas_fp": 0,
+  "celdas_distintas_fn": 0,
+  "celdas_distintas_f1": 0,
+  "celdas_distintas_mejor_epoca": 0,
+  "celdas_distintas_epocas_entrenadas": 0,
+  "max_dif_abs_f1": 0.0,
+  "imagenes": 9600,
+  "predicciones_distintas": 0,
+  "max_dif_abs_prob_grieta": 0.0,
+  "max_dif_abs_perdida_train": 0.0,
+  "identico": true
+}

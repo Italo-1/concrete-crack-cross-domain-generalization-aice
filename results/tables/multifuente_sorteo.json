@@ -1,0 +1,50 @@
+{
+  "sdnet_D": {
+    "train": {
+      "sdnet_P": 934,
+      "sdnet_W": 933,
+      "metu": 933
+    },
+    "val": {
+      "sdnet_P": 200,
+      "sdnet_W": 200,
+      "metu": 200
+    }
+  },
+  "sdnet_P": {
+    "train": {
+      "sdnet_D": 934,
+      "sdnet_W": 933,
+      "metu": 933
+    },
+    "val": {
+      "sdnet_D": 200,
+      "sdnet_W": 200,
+      "metu": 200
+    }
+  },
+  "sdnet_W": {
+    "train": {
+      "sdnet_D": 934,
+      "sdnet_P": 933,
+      "metu": 933
+    },
+    "val": {
+      "sdnet_D": 200,
+      "sdnet_P": 200,
+      "metu": 200
+    }
+  },
+  "metu": {
+    "train": {
+      "sdnet_D": 934,
+      "sdnet_P": 933,
+      "sdnet_W": 933
+    },
+    "val": {
+      "sdnet_D": 200,
+      "sdnet_P": 200,
+      "sdnet_W": 200
+    }
+  }
+}

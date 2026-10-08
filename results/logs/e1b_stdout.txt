@@ -1,0 +1,594 @@
+18:34:48 | Particion 'agrupada', condiciones ['baseline'], 4 arq. x 3 semillas x 4 origenes, 12 epocas max., lote 64
+18:34:48 | [resnet18/baseline/agrupada/s42] entrenando en 'sdnet_D'
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+18:34:59 | epoca  0 | perdida 0.6154 | f1 val 0.6770 | exactitud 0.7217
+18:35:07 | epoca  1 | perdida 0.4608 | f1 val 0.7429 | exactitud 0.7750
+18:35:15 | epoca  2 | perdida 0.3814 | f1 val 0.7653 | exactitud 0.8017
+18:35:22 | epoca  3 | perdida 0.3087 | f1 val 0.7417 | exactitud 0.7400
+18:35:30 | epoca  4 | perdida 0.2603 | f1 val 0.7604 | exactitud 0.7783
+18:35:37 | epoca  5 | perdida 0.2068 | f1 val 0.7664 | exactitud 0.7867
+18:35:45 | epoca  6 | perdida 0.1691 | f1 val 0.7684 | exactitud 0.7900
+18:35:52 | epoca  7 | perdida 0.1371 | f1 val 0.7862 | exactitud 0.8033
+18:36:00 | epoca  8 | perdida 0.1111 | f1 val 0.7772 | exactitud 0.7850
+18:36:07 | epoca  9 | perdida 0.0974 | f1 val 0.7850 | exactitud 0.7900
+18:36:14 | epoca 10 | perdida 0.0928 | f1 val 0.7843 | exactitud 0.7983
+18:36:14 | parada temprana en la epoca 10 (paciencia 3)
+18:36:14 | [resnet18/baseline/agrupada/s42] 'sdnet_D': mejor F1 val 0.7862 en la epoca 7, 11 epocas, 1.4 min
+18:36:17 |     F1 por destino: sdnet_D 0.825, sdnet_P 0.687, sdnet_W 0.782, metu 0.794
+18:36:18 | [resnet18/baseline/agrupada/s42] entrenando en 'sdnet_P'
+18:36:26 | epoca  0 | perdida 0.6156 | f1 val 0.7787 | exactitud 0.7367
+18:36:34 | epoca  1 | perdida 0.4022 | f1 val 0.8252 | exactitud 0.8383
+18:36:42 | epoca  2 | perdida 0.2857 | f1 val 0.8694 | exactitud 0.8783
+18:36:49 | epoca  3 | perdida 0.2158 | f1 val 0.8517 | exactitud 0.8450
+18:36:56 | epoca  4 | perdida 0.1732 | f1 val 0.8862 | exactitud 0.8883
+18:37:03 | epoca  5 | perdida 0.1201 | f1 val 0.8874 | exactitud 0.8867
+18:37:11 | epoca  6 | perdida 0.0942 | f1 val 0.8911 | exactitud 0.8917
+18:37:18 | epoca  7 | perdida 0.0677 | f1 val 0.8874 | exactitud 0.8883
+18:37:25 | epoca  8 | perdida 0.0592 | f1 val 0.8893 | exactitud 0.8883
+18:37:32 | epoca  9 | perdida 0.0507 | f1 val 0.8812 | exactitud 0.8800
+18:37:32 | parada temprana en la epoca 9 (paciencia 3)
+18:37:32 | [resnet18/baseline/agrupada/s42] 'sdnet_P': mejor F1 val 0.8911 en la epoca 6, 10 epocas, 1.2 min
+18:37:35 |     F1 por destino: sdnet_D 0.761, sdnet_P 0.851, sdnet_W 0.697, metu 0.924
+18:37:35 | [resnet18/baseline/agrupada/s42] entrenando en 'sdnet_W'
+18:37:43 | epoca  0 | perdida 0.5899 | f1 val 0.7854 | exactitud 0.7850
+18:37:51 | epoca  1 | perdida 0.4256 | f1 val 0.7723 | exactitud 0.7750
+18:37:58 | epoca  2 | perdida 0.3358 | f1 val 0.8154 | exactitud 0.8167
+18:38:06 | epoca  3 | perdida 0.2780 | f1 val 0.8262 | exactitud 0.8317
+18:38:13 | epoca  4 | perdida 0.2206 | f1 val 0.8369 | exactitud 0.8467
+18:38:20 | epoca  5 | perdida 0.1704 | f1 val 0.8462 | exactitud 0.8467
+18:38:27 | epoca  6 | perdida 0.1388 | f1 val 0.8482 | exactitud 0.8550
+18:38:34 | epoca  7 | perdida 0.1044 | f1 val 0.8495 | exactitud 0.8500
+18:38:42 | epoca  8 | perdida 0.0859 | f1 val 0.8514 | exactitud 0.8533
+18:38:49 | epoca  9 | perdida 0.0793 | f1 val 0.8433 | exactitud 0.8433
+18:38:56 | epoca 10 | perdida 0.0701 | f1 val 0.8498 | exactitud 0.8533
+18:39:04 | epoca 11 | perdida 0.0683 | f1 val 0.8562 | exactitud 0.8617
+18:39:04 | [resnet18/baseline/agrupada/s42] 'sdnet_W': mejor F1 val 0.8562 en la epoca 11, 12 epocas, 1.5 min
+18:39:06 |     F1 por destino: sdnet_D 0.826, sdnet_P 0.781, sdnet_W 0.872, metu 0.826
+18:39:07 | [resnet18/baseline/agrupada/s42] entrenando en 'metu'
+18:39:15 | epoca  0 | perdida 0.3184 | f1 val 0.9917 | exactitud 0.9917
+18:39:22 | epoca  1 | perdida 0.0251 | f1 val 0.9967 | exactitud 0.9967
+18:39:30 | epoca  2 | perdida 0.0088 | f1 val 1.0000 | exactitud 1.0000
+18:39:37 | epoca  3 | perdida 0.0049 | f1 val 0.9983 | exactitud 0.9983
+18:39:44 | epoca  4 | perdida 0.0039 | f1 val 0.9983 | exactitud 0.9983
+18:39:51 | epoca  5 | perdida 0.0040 | f1 val 0.9983 | exactitud 0.9983
+18:39:51 | parada temprana en la epoca 5 (paciencia 3)
+18:39:51 | [resnet18/baseline/agrupada/s42] 'metu': mejor F1 val 1.0000 en la epoca 2, 6 epocas, 0.7 min
+18:39:54 |     F1 por destino: sdnet_D 0.436, sdnet_P 0.720, sdnet_W 0.446, metu 1.000
+18:39:54 | [resnet18/baseline/s42] 4 origenes en 5.1 min
+18:39:54 | [resnet18/baseline/agrupada/s43] entrenando en 'sdnet_D'
+18:40:02 | epoca  0 | perdida 0.6265 | f1 val 0.6782 | exactitud 0.7200
+18:40:09 | epoca  1 | perdida 0.4846 | f1 val 0.7386 | exactitud 0.7700
+18:40:16 | epoca  2 | perdida 0.4006 | f1 val 0.7655 | exactitud 0.7917
+18:40:24 | epoca  3 | perdida 0.3355 | f1 val 0.7640 | exactitud 0.7817
+18:40:31 | epoca  4 | perdida 0.2718 | f1 val 0.7659 | exactitud 0.7667
+18:40:38 | epoca  5 | perdida 0.2243 | f1 val 0.7868 | exactitud 0.7950
+18:40:45 | epoca  6 | perdida 0.1925 | f1 val 0.7782 | exactitud 0.8033
+18:40:52 | epoca  7 | perdida 0.1589 | f1 val 0.8014 | exactitud 0.8117
+18:40:59 | epoca  8 | perdida 0.1341 | f1 val 0.8048 | exactitud 0.8100
+18:41:06 | epoca  9 | perdida 0.1235 | f1 val 0.8034 | exactitud 0.8083
+18:41:13 | epoca 10 | perdida 0.1217 | f1 val 0.8103 | exactitud 0.8150
+18:41:21 | epoca 11 | perdida 0.1102 | f1 val 0.8069 | exactitud 0.8133
+18:41:21 | [resnet18/baseline/agrupada/s43] 'sdnet_D': mejor F1 val 0.8103 en la epoca 10, 12 epocas, 1.4 min
+18:41:24 |     F1 por destino: sdnet_D 0.829, sdnet_P 0.606, sdnet_W 0.742, metu 0.826
+18:41:24 | [resnet18/baseline/agrupada/s43] entrenando en 'sdnet_P'
+18:41:32 | epoca  0 | perdida 0.6054 | f1 val 0.7332 | exactitud 0.6617
+18:41:39 | epoca  1 | perdida 0.4103 | f1 val 0.8376 | exactitud 0.8417
+18:41:47 | epoca  2 | perdida 0.2788 | f1 val 0.8664 | exactitud 0.8700
+18:41:54 | epoca  3 | perdida 0.2204 | f1 val 0.8670 | exactitud 0.8650
+18:42:01 | epoca  4 | perdida 0.1704 | f1 val 0.8889 | exactitud 0.8883
+18:42:08 | epoca  5 | perdida 0.1294 | f1 val 0.8918 | exactitud 0.8917
+18:42:15 | epoca  6 | perdida 0.0941 | f1 val 0.8942 | exactitud 0.8967
+18:42:22 | epoca  7 | perdida 0.0802 | f1 val 0.8992 | exactitud 0.8983
+18:42:30 | epoca  8 | perdida 0.0562 | f1 val 0.9005 | exactitud 0.9017
+18:42:37 | epoca  9 | perdida 0.0549 | f1 val 0.8972 | exactitud 0.8950
+18:42:44 | epoca 10 | perdida 0.0580 | f1 val 0.8933 | exactitud 0.8917
+18:42:51 | epoca 11 | perdida 0.0466 | f1 val 0.9064 | exactitud 0.9067
+18:42:51 | [resnet18/baseline/agrupada/s43] 'sdnet_P': mejor F1 val 0.9064 en la epoca 11, 12 epocas, 1.4 min
+18:42:54 |     F1 por destino: sdnet_D 0.789, sdnet_P 0.833, sdnet_W 0.729, metu 0.930
+18:42:54 | [resnet18/baseline/agrupada/s43] entrenando en 'sdnet_W'
+18:43:02 | epoca  0 | perdida 0.6029 | f1 val 0.7902 | exactitud 0.7583
+18:43:09 | epoca  1 | perdida 0.4328 | f1 val 0.7844 | exactitud 0.8067
+18:43:17 | epoca  2 | perdida 0.3379 | f1 val 0.8134 | exactitud 0.8150
+18:43:24 | epoca  3 | perdida 0.2613 | f1 val 0.8380 | exactitud 0.8467
+18:43:31 | epoca  4 | perdida 0.2124 | f1 val 0.8294 | exactitud 0.8300
+18:43:38 | epoca  5 | perdida 0.1628 | f1 val 0.8152 | exactitud 0.8300
+18:43:45 | epoca  6 | perdida 0.1250 | f1 val 0.8180 | exactitud 0.8317
+18:43:45 | parada temprana en la epoca 6 (paciencia 3)
+18:43:45 | [resnet18/baseline/agrupada/s43] 'sdnet_W': mejor F1 val 0.8380 en la epoca 3, 7 epocas, 0.9 min
+18:43:48 |     F1 por destino: sdnet_D 0.817, sdnet_P 0.772, sdnet_W 0.831, metu 0.883
+18:43:48 | [resnet18/baseline/agrupada/s43] entrenando en 'metu'
+18:43:56 | epoca  0 | perdida 0.3276 | f1 val 0.9934 | exactitud 0.9933
+18:44:04 | epoca  1 | perdida 0.0210 | f1 val 0.9967 | exactitud 0.9967
+18:44:11 | epoca  2 | perdida 0.0085 | f1 val 0.9967 | exactitud 0.9967
+18:44:18 | epoca  3 | perdida 0.0059 | f1 val 0.9983 | exactitud 0.9983
+18:44:26 | epoca  4 | perdida 0.0029 | f1 val 0.9967 | exactitud 0.9967
+18:44:33 | epoca  5 | perdida 0.0020 | f1 val 0.9967 | exactitud 0.9967
+18:44:40 | epoca  6 | perdida 0.0027 | f1 val 0.9967 | exactitud 0.9967
+18:44:40 | parada temprana en la epoca 6 (paciencia 3)
+18:44:40 | [resnet18/baseline/agrupada/s43] 'metu': mejor F1 val 0.9983 en la epoca 3, 7 epocas, 0.9 min
+18:44:43 |     F1 por destino: sdnet_D 0.499, sdnet_P 0.702, sdnet_W 0.512, metu 1.000
+18:44:43 | [resnet18/baseline/s43] 4 origenes en 4.8 min
+18:44:43 | [resnet18/baseline/agrupada/s44] entrenando en 'sdnet_D'
+18:44:51 | epoca  0 | perdida 0.6199 | f1 val 0.7000 | exactitud 0.7300
+18:44:58 | epoca  1 | perdida 0.4664 | f1 val 0.7575 | exactitud 0.7717
+18:45:05 | epoca  2 | perdida 0.3815 | f1 val 0.7481 | exactitud 0.7800
+18:45:12 | epoca  3 | perdida 0.3231 | f1 val 0.7360 | exactitud 0.7800
+18:45:19 | epoca  4 | perdida 0.2698 | f1 val 0.7542 | exactitud 0.7783
+18:45:19 | parada temprana en la epoca 4 (paciencia 3)
+18:45:19 | [resnet18/baseline/agrupada/s44] 'sdnet_D': mejor F1 val 0.7575 en la epoca 1, 5 epocas, 0.6 min
+18:45:22 |     F1 por destino: sdnet_D 0.773, sdnet_P 0.613, sdnet_W 0.688, metu 0.859
+18:45:22 | [resnet18/baseline/agrupada/s44] entrenando en 'sdnet_P'
+18:45:30 | epoca  0 | perdida 0.6177 | f1 val 0.7381 | exactitud 0.6617
+18:45:38 | epoca  1 | perdida 0.4138 | f1 val 0.8339 | exactitud 0.8333
+18:45:45 | epoca  2 | perdida 0.2931 | f1 val 0.8700 | exactitud 0.8750
+18:45:52 | epoca  3 | perdida 0.2147 | f1 val 0.8668 | exactitud 0.8683
+18:45:59 | epoca  4 | perdida 0.1689 | f1 val 0.8750 | exactitud 0.8767
+18:46:07 | epoca  5 | perdida 0.1264 | f1 val 0.8656 | exactitud 0.8633
+18:46:14 | epoca  6 | perdida 0.0966 | f1 val 0.8658 | exactitud 0.8600
+18:46:21 | epoca  7 | perdida 0.0739 | f1 val 0.8781 | exactitud 0.8783
+18:46:28 | epoca  8 | perdida 0.0620 | f1 val 0.8791 | exactitud 0.8767
+18:46:35 | epoca  9 | perdida 0.0527 | f1 val 0.8785 | exactitud 0.8783
+18:46:42 | epoca 10 | perdida 0.0501 | f1 val 0.8744 | exactitud 0.8717
+18:46:49 | epoca 11 | perdida 0.0485 | f1 val 0.8777 | exactitud 0.8750
+18:46:49 | parada temprana en la epoca 11 (paciencia 3)
+18:46:49 | [resnet18/baseline/agrupada/s44] 'sdnet_P': mejor F1 val 0.8791 en la epoca 8, 12 epocas, 1.4 min
+18:46:52 |     F1 por destino: sdnet_D 0.758, sdnet_P 0.872, sdnet_W 0.744, metu 0.938
+18:46:52 | [resnet18/baseline/agrupada/s44] entrenando en 'sdnet_W'
+18:47:01 | epoca  0 | perdida 0.6054 | f1 val 0.7792 | exactitud 0.7950
+18:47:08 | epoca  1 | perdida 0.4246 | f1 val 0.8190 | exactitud 0.8283
+18:47:15 | epoca  2 | perdida 0.3258 | f1 val 0.8146 | exactitud 0.7967
+18:47:22 | epoca  3 | perdida 0.2594 | f1 val 0.8430 | exactitud 0.8517
+18:47:29 | epoca  4 | perdida 0.2118 | f1 val 0.8193 | exactitud 0.8250
+18:47:36 | epoca  5 | perdida 0.1618 | f1 val 0.8395 | exactitud 0.8400
+18:47:43 | epoca  6 | perdida 0.1231 | f1 val 0.8475 | exactitud 0.8500
+18:47:51 | epoca  7 | perdida 0.0902 | f1 val 0.8299 | exactitud 0.8367
+18:47:58 | epoca  8 | perdida 0.0779 | f1 val 0.8385 | exactitud 0.8433
+18:48:05 | epoca  9 | perdida 0.0666 | f1 val 0.8325 | exactitud 0.8350
+18:48:05 | parada temprana en la epoca 9 (paciencia 3)
+18:48:05 | [resnet18/baseline/agrupada/s44] 'sdnet_W': mejor F1 val 0.8475 en la epoca 6, 10 epocas, 1.2 min
+18:48:08 |     F1 por destino: sdnet_D 0.799, sdnet_P 0.806, sdnet_W 0.855, metu 0.862
+18:48:08 | [resnet18/baseline/agrupada/s44] entrenando en 'metu'
+18:48:16 | epoca  0 | perdida 0.3240 | f1 val 0.9787 | exactitud 0.9783
+18:48:23 | epoca  1 | perdida 0.0306 | f1 val 0.9950 | exactitud 0.9950
+18:48:31 | epoca  2 | perdida 0.0080 | f1 val 0.9983 | exactitud 0.9983
+18:48:38 | epoca  3 | perdida 0.0068 | f1 val 0.9967 | exactitud 0.9967
+18:48:45 | epoca  4 | perdida 0.0031 | f1 val 1.0000 | exactitud 1.0000
+18:48:52 | epoca  5 | perdida 0.0030 | f1 val 1.0000 | exactitud 1.0000
+18:48:59 | epoca  6 | perdida 0.0020 | f1 val 0.9967 | exactitud 0.9967
+18:49:07 | epoca  7 | perdida 0.0019 | f1 val 0.9967 | exactitud 0.9967
+18:49:07 | parada temprana en la epoca 7 (paciencia 3)
+18:49:07 | [resnet18/baseline/agrupada/s44] 'metu': mejor F1 val 1.0000 en la epoca 4, 8 epocas, 1.0 min
+18:49:10 |     F1 por destino: sdnet_D 0.403, sdnet_P 0.660, sdnet_W 0.388, metu 0.998
+18:49:10 | [resnet18/baseline/s44] 4 origenes en 4.4 min
+18:49:10 | [efficientnet_b0/baseline/agrupada/s42] entrenando en 'sdnet_D'
+18:49:52 | epoca  0 | perdida 1.4602 | f1 val 0.7354 | exactitud 0.7433
+18:50:04 | epoca  1 | perdida 0.4764 | f1 val 0.7387 | exactitud 0.7500
+18:50:15 | epoca  2 | perdida 0.2248 | f1 val 0.7456 | exactitud 0.7600
+18:50:25 | epoca  3 | perdida 0.1387 | f1 val 0.7374 | exactitud 0.7483
+18:50:36 | epoca  4 | perdida 0.0826 | f1 val 0.7427 | exactitud 0.7517
+18:50:47 | epoca  5 | perdida 0.0465 | f1 val 0.7447 | exactitud 0.7600
+18:50:47 | parada temprana en la epoca 5 (paciencia 3)
+18:50:47 | [efficientnet_b0/baseline/agrupada/s42] 'sdnet_D': mejor F1 val 0.7456 en la epoca 2, 6 epocas, 1.6 min
+18:50:50 |     F1 por destino: sdnet_D 0.769, sdnet_P 0.574, sdnet_W 0.675, metu 0.612
+18:50:50 | [efficientnet_b0/baseline/agrupada/s42] entrenando en 'sdnet_P'
+18:51:01 | epoca  0 | perdida 1.2678 | f1 val 0.7698 | exactitud 0.7767
+18:51:12 | epoca  1 | perdida 0.4295 | f1 val 0.8074 | exactitud 0.8083
+18:51:23 | epoca  2 | perdida 0.2185 | f1 val 0.8262 | exactitud 0.8367
+18:51:34 | epoca  3 | perdida 0.0915 | f1 val 0.8368 | exactitud 0.8433
+18:51:44 | epoca  4 | perdida 0.0672 | f1 val 0.8523 | exactitud 0.8533
+18:51:55 | epoca  5 | perdida 0.0304 | f1 val 0.8476 | exactitud 0.8483
+18:52:06 | epoca  6 | perdida 0.0242 | f1 val 0.8527 | exactitud 0.8567
+18:52:17 | epoca  7 | perdida 0.0224 | f1 val 0.8562 | exactitud 0.8583
+18:52:27 | epoca  8 | perdida 0.0115 | f1 val 0.8601 | exactitud 0.8633
+18:52:38 | epoca  9 | perdida 0.0113 | f1 val 0.8638 | exactitud 0.8633
+18:52:49 | epoca 10 | perdida 0.0114 | f1 val 0.8625 | exactitud 0.8667
+18:53:00 | epoca 11 | perdida 0.0074 | f1 val 0.8552 | exactitud 0.8600
+18:53:00 | [efficientnet_b0/baseline/agrupada/s42] 'sdnet_P': mejor F1 val 0.8638 en la epoca 9, 12 epocas, 2.2 min
+18:53:04 |     F1 por destino: sdnet_D 0.730, sdnet_P 0.828, sdnet_W 0.608, metu 0.942
+18:53:04 | [efficientnet_b0/baseline/agrupada/s42] entrenando en 'sdnet_W'
+18:53:15 | epoca  0 | perdida 1.4475 | f1 val 0.7599 | exactitud 0.7683
+18:53:26 | epoca  1 | perdida 0.5239 | f1 val 0.7636 | exactitud 0.7533
+18:53:37 | epoca  2 | perdida 0.2642 | f1 val 0.8021 | exactitud 0.8083
+18:53:48 | epoca  3 | perdida 0.1324 | f1 val 0.7543 | exactitud 0.7633
+18:53:59 | epoca  4 | perdida 0.0910 | f1 val 0.8215 | exactitud 0.8283
+18:54:09 | epoca  5 | perdida 0.0527 | f1 val 0.8179 | exactitud 0.8300
+18:54:20 | epoca  6 | perdida 0.0428 | f1 val 0.8093 | exactitud 0.8217
+18:54:31 | epoca  7 | perdida 0.0242 | f1 val 0.8209 | exactitud 0.8233
+18:54:31 | parada temprana en la epoca 7 (paciencia 3)
+18:54:31 | [efficientnet_b0/baseline/agrupada/s42] 'sdnet_W': mejor F1 val 0.8215 en la epoca 4, 8 epocas, 1.4 min
+18:54:35 |     F1 por destino: sdnet_D 0.738, sdnet_P 0.576, sdnet_W 0.798, metu 0.673
+18:54:35 | [efficientnet_b0/baseline/agrupada/s42] entrenando en 'metu'
+18:54:59 | epoca  0 | perdida 0.2528 | f1 val 0.9983 | exactitud 0.9983
+18:55:10 | epoca  1 | perdida 0.0309 | f1 val 1.0000 | exactitud 1.0000
+18:55:21 | epoca  2 | perdida 0.0110 | f1 val 0.9983 | exactitud 0.9983
+18:55:32 | epoca  3 | perdida 0.0063 | f1 val 0.9983 | exactitud 0.9983
+18:55:43 | epoca  4 | perdida 0.0110 | f1 val 0.9967 | exactitud 0.9967
+18:55:43 | parada temprana en la epoca 4 (paciencia 3)
+18:55:43 | [efficientnet_b0/baseline/agrupada/s42] 'metu': mejor F1 val 1.0000 en la epoca 1, 5 epocas, 1.1 min
+18:55:47 |     F1 por destino: sdnet_D 0.344, sdnet_P 0.535, sdnet_W 0.278, metu 0.998
+18:55:47 | [efficientnet_b0/baseline/s42] 4 origenes en 6.6 min
+18:55:47 | [efficientnet_b0/baseline/agrupada/s43] entrenando en 'sdnet_D'
+18:55:58 | epoca  0 | perdida 1.4806 | f1 val 0.7099 | exactitud 0.6717
+18:56:09 | epoca  1 | perdida 0.4533 | f1 val 0.7273 | exactitud 0.7400
+18:56:20 | epoca  2 | perdida 0.2171 | f1 val 0.7250 | exactitud 0.7383
+18:56:30 | epoca  3 | perdida 0.1357 | f1 val 0.7241 | exactitud 0.7383
+18:56:41 | epoca  4 | perdida 0.0766 | f1 val 0.7483 | exactitud 0.7533
+18:56:51 | epoca  5 | perdida 0.0538 | f1 val 0.7238 | exactitud 0.7367
+18:57:02 | epoca  6 | perdida 0.0371 | f1 val 0.7151 | exactitud 0.7383
+18:57:13 | epoca  7 | perdida 0.0260 | f1 val 0.7586 | exactitud 0.7667
+18:57:23 | epoca  8 | perdida 0.0130 | f1 val 0.7363 | exactitud 0.7517
+18:57:34 | epoca  9 | perdida 0.0163 | f1 val 0.7260 | exactitud 0.7433
+18:57:44 | epoca 10 | perdida 0.0128 | f1 val 0.7286 | exactitud 0.7467
+18:57:44 | parada temprana en la epoca 10 (paciencia 3)
+18:57:44 | [efficientnet_b0/baseline/agrupada/s43] 'sdnet_D': mejor F1 val 0.7586 en la epoca 7, 11 epocas, 2.0 min
+18:57:48 |     F1 por destino: sdnet_D 0.798, sdnet_P 0.694, sdnet_W 0.714, metu 0.877
+18:57:48 | [efficientnet_b0/baseline/agrupada/s43] entrenando en 'sdnet_P'
+18:58:00 | epoca  0 | perdida 1.3320 | f1 val 0.7826 | exactitud 0.7667
+18:58:11 | epoca  1 | perdida 0.3699 | f1 val 0.8164 | exactitud 0.8133
+18:58:22 | epoca  2 | perdida 0.2019 | f1 val 0.8136 | exactitud 0.8167
+18:58:33 | epoca  3 | perdida 0.0851 | f1 val 0.8070 | exactitud 0.8150
+18:58:44 | epoca  4 | perdida 0.0731 | f1 val 0.8243 | exactitud 0.8267
+18:58:55 | epoca  5 | perdida 0.0320 | f1 val 0.8396 | exactitud 0.8433
+18:59:06 | epoca  6 | perdida 0.0231 | f1 val 0.8299 | exactitud 0.8367
+18:59:17 | epoca  7 | perdida 0.0164 | f1 val 0.8399 | exactitud 0.8450
+18:59:27 | epoca  8 | perdida 0.0123 | f1 val 0.8508 | exactitud 0.8533
+18:59:38 | epoca  9 | perdida 0.0078 | f1 val 0.8533 | exactitud 0.8550
+18:59:49 | epoca 10 | perdida 0.0136 | f1 val 0.8552 | exactitud 0.8600
+19:00:00 | epoca 11 | perdida 0.0052 | f1 val 0.8377 | exactitud 0.8450
+19:00:00 | [efficientnet_b0/baseline/agrupada/s43] 'sdnet_P': mejor F1 val 0.8552 en la epoca 10, 12 epocas, 2.2 min
+19:00:03 |     F1 por destino: sdnet_D 0.742, sdnet_P 0.804, sdnet_W 0.612, metu 0.893
+19:00:04 | [efficientnet_b0/baseline/agrupada/s43] entrenando en 'sdnet_W'
+19:00:14 | epoca  0 | perdida 1.4241 | f1 val 0.7597 | exactitud 0.7617
+19:00:25 | epoca  1 | perdida 0.4548 | f1 val 0.7765 | exactitud 0.7717
+19:00:36 | epoca  2 | perdida 0.2253 | f1 val 0.7950 | exactitud 0.8083
+19:00:47 | epoca  3 | perdida 0.1228 | f1 val 0.8028 | exactitud 0.8150
+19:00:57 | epoca  4 | perdida 0.0750 | f1 val 0.8026 | exactitud 0.8000
+19:01:08 | epoca  5 | perdida 0.0480 | f1 val 0.8116 | exactitud 0.8167
+19:01:19 | epoca  6 | perdida 0.0294 | f1 val 0.8206 | exactitud 0.8317
+19:01:30 | epoca  7 | perdida 0.0218 | f1 val 0.8211 | exactitud 0.8300
+19:01:40 | epoca  8 | perdida 0.0100 | f1 val 0.8093 | exactitud 0.8217
+19:01:51 | epoca  9 | perdida 0.0088 | f1 val 0.8169 | exactitud 0.8200
+19:02:02 | epoca 10 | perdida 0.0131 | f1 val 0.8215 | exactitud 0.8283
+19:02:12 | epoca 11 | perdida 0.0120 | f1 val 0.8118 | exactitud 0.8200
+19:02:12 | [efficientnet_b0/baseline/agrupada/s43] 'sdnet_W': mejor F1 val 0.8215 en la epoca 10, 12 epocas, 2.1 min
+19:02:16 |     F1 por destino: sdnet_D 0.780, sdnet_P 0.512, sdnet_W 0.803, metu 0.612
+19:02:16 | [efficientnet_b0/baseline/agrupada/s43] entrenando en 'metu'
+19:02:28 | epoca  0 | perdida 0.2041 | f1 val 0.9983 | exactitud 0.9983
+19:02:38 | epoca  1 | perdida 0.0104 | f1 val 0.9950 | exactitud 0.9950
+19:02:49 | epoca  2 | perdida 0.0092 | f1 val 0.9950 | exactitud 0.9950
+19:03:00 | epoca  3 | perdida 0.0242 | f1 val 0.9933 | exactitud 0.9933
+19:03:00 | parada temprana en la epoca 3 (paciencia 3)
+19:03:00 | [efficientnet_b0/baseline/agrupada/s43] 'metu': mejor F1 val 0.9983 en la epoca 0, 4 epocas, 0.7 min
+19:03:04 |     F1 por destino: sdnet_D 0.404, sdnet_P 0.392, sdnet_W 0.355, metu 0.998
+19:03:04 | [efficientnet_b0/baseline/s43] 4 origenes en 7.3 min
+19:03:04 | [efficientnet_b0/baseline/agrupada/s44] entrenando en 'sdnet_D'
+19:03:16 | epoca  0 | perdida 1.6037 | f1 val 0.7134 | exactitud 0.7067
+19:03:27 | epoca  1 | perdida 0.5475 | f1 val 0.7179 | exactitud 0.7183
+19:03:38 | epoca  2 | perdida 0.2460 | f1 val 0.6912 | exactitud 0.7067
+19:03:48 | epoca  3 | perdida 0.1349 | f1 val 0.7098 | exactitud 0.7233
+19:03:59 | epoca  4 | perdida 0.0866 | f1 val 0.7247 | exactitud 0.7367
+19:04:10 | epoca  5 | perdida 0.0613 | f1 val 0.7175 | exactitud 0.7283
+19:04:20 | epoca  6 | perdida 0.0247 | f1 val 0.7138 | exactitud 0.7167
+19:04:31 | epoca  7 | perdida 0.0185 | f1 val 0.7207 | exactitud 0.7300
+19:04:31 | parada temprana en la epoca 7 (paciencia 3)
+19:04:31 | [efficientnet_b0/baseline/agrupada/s44] 'sdnet_D': mejor F1 val 0.7247 en la epoca 4, 8 epocas, 1.4 min
+19:04:35 |     F1 por destino: sdnet_D 0.789, sdnet_P 0.444, sdnet_W 0.642, metu 0.464
+19:04:35 | [efficientnet_b0/baseline/agrupada/s44] entrenando en 'sdnet_P'
+19:04:46 | epoca  0 | perdida 1.4751 | f1 val 0.8026 | exactitud 0.7950
+19:04:56 | epoca  1 | perdida 0.4051 | f1 val 0.8374 | exactitud 0.8433
+19:05:07 | epoca  2 | perdida 0.1857 | f1 val 0.8355 | exactitud 0.8333
+19:05:18 | epoca  3 | perdida 0.0967 | f1 val 0.8209 | exactitud 0.8233
+19:05:28 | epoca  4 | perdida 0.0723 | f1 val 0.8514 | exactitud 0.8533
+19:05:39 | epoca  5 | perdida 0.0500 | f1 val 0.8423 | exactitud 0.8433
+19:05:50 | epoca  6 | perdida 0.0366 | f1 val 0.8421 | exactitud 0.8450
+19:06:01 | epoca  7 | perdida 0.0181 | f1 val 0.8473 | exactitud 0.8517
+19:06:01 | parada temprana en la epoca 7 (paciencia 3)
+19:06:01 | [efficientnet_b0/baseline/agrupada/s44] 'sdnet_P': mejor F1 val 0.8514 en la epoca 4, 8 epocas, 1.4 min
+19:06:04 |     F1 por destino: sdnet_D 0.734, sdnet_P 0.783, sdnet_W 0.579, metu 0.824
+19:06:04 | [efficientnet_b0/baseline/agrupada/s44] entrenando en 'sdnet_W'
+19:06:15 | epoca  0 | perdida 1.4407 | f1 val 0.7464 | exactitud 0.7667
+19:06:26 | epoca  1 | perdida 0.5005 | f1 val 0.7754 | exactitud 0.7750
+19:06:37 | epoca  2 | perdida 0.2320 | f1 val 0.7772 | exactitud 0.7917
+19:06:48 | epoca  3 | perdida 0.1144 | f1 val 0.8014 | exactitud 0.8150
+19:06:59 | epoca  4 | perdida 0.0845 | f1 val 0.8209 | exactitud 0.8283
+19:07:09 | epoca  5 | perdida 0.0461 | f1 val 0.8279 | exactitud 0.8317
+19:07:20 | epoca  6 | perdida 0.0336 | f1 val 0.8304 | exactitud 0.8367
+19:07:31 | epoca  7 | perdida 0.0231 | f1 val 0.8078 | exactitud 0.8183
+19:07:41 | epoca  8 | perdida 0.0137 | f1 val 0.8256 | exactitud 0.8317
+19:07:52 | epoca  9 | perdida 0.0155 | f1 val 0.8284 | exactitud 0.8350
+19:07:52 | parada temprana en la epoca 9 (paciencia 3)
+19:07:52 | [efficientnet_b0/baseline/agrupada/s44] 'sdnet_W': mejor F1 val 0.8304 en la epoca 6, 10 epocas, 1.8 min
+19:07:56 |     F1 por destino: sdnet_D 0.755, sdnet_P 0.532, sdnet_W 0.786, metu 0.631
+19:07:56 | [efficientnet_b0/baseline/agrupada/s44] entrenando en 'metu'
+19:08:07 | epoca  0 | perdida 0.2725 | f1 val 0.9967 | exactitud 0.9967
+19:08:18 | epoca  1 | perdida 0.0248 | f1 val 0.9967 | exactitud 0.9967
+19:08:29 | epoca  2 | perdida 0.0144 | f1 val 0.9917 | exactitud 0.9917
+19:08:40 | epoca  3 | perdida 0.0100 | f1 val 0.9983 | exactitud 0.9983
+19:08:50 | epoca  4 | perdida 0.0073 | f1 val 0.9983 | exactitud 0.9983
+19:09:01 | epoca  5 | perdida 0.0002 | f1 val 0.9983 | exactitud 0.9983
+19:09:12 | epoca  6 | perdida 0.0038 | f1 val 0.9983 | exactitud 0.9983
+19:09:12 | parada temprana en la epoca 6 (paciencia 3)
+19:09:12 | [efficientnet_b0/baseline/agrupada/s44] 'metu': mejor F1 val 0.9983 en la epoca 3, 7 epocas, 1.3 min
+19:09:15 |     F1 por destino: sdnet_D 0.437, sdnet_P 0.686, sdnet_W 0.359, metu 0.997
+19:09:15 | [efficientnet_b0/baseline/s44] 4 origenes en 6.2 min
+19:09:15 | [mobilenetv3_small_100/baseline/agrupada/s42] entrenando en 'sdnet_D'
+19:09:40 | epoca  0 | perdida 2.1315 | f1 val 0.6504 | exactitud 0.7133
+19:09:46 | epoca  1 | perdida 0.8276 | f1 val 0.7135 | exactitud 0.6400
+19:09:53 | epoca  2 | perdida 0.5645 | f1 val 0.7137 | exactitud 0.7567
+19:09:59 | epoca  3 | perdida 0.3538 | f1 val 0.7667 | exactitud 0.7617
+19:10:06 | epoca  4 | perdida 0.2854 | f1 val 0.7087 | exactitud 0.7533
+19:10:12 | epoca  5 | perdida 0.2153 | f1 val 0.7742 | exactitud 0.7783
+19:10:18 | epoca  6 | perdida 0.1502 | f1 val 0.7632 | exactitud 0.7683
+19:10:23 | epoca  7 | perdida 0.1350 | f1 val 0.7564 | exactitud 0.7767
+19:10:30 | epoca  8 | perdida 0.0945 | f1 val 0.7612 | exactitud 0.7700
+19:10:30 | parada temprana en la epoca 8 (paciencia 3)
+19:10:30 | [mobilenetv3_small_100/baseline/agrupada/s42] 'sdnet_D': mejor F1 val 0.7742 en la epoca 5, 9 epocas, 1.2 min
+19:10:32 |     F1 por destino: sdnet_D 0.781, sdnet_P 0.359, sdnet_W 0.708, metu 0.728
+19:10:32 | [mobilenetv3_small_100/baseline/agrupada/s42] entrenando en 'sdnet_P'
+19:10:38 | epoca  0 | perdida 1.9091 | f1 val 0.7981 | exactitud 0.7900
+19:10:43 | epoca  1 | perdida 0.6682 | f1 val 0.7956 | exactitud 0.7517
+19:10:49 | epoca  2 | perdida 0.4302 | f1 val 0.8557 | exactitud 0.8567
+19:10:55 | epoca  3 | perdida 0.2046 | f1 val 0.8370 | exactitud 0.8383
+19:11:01 | epoca  4 | perdida 0.1321 | f1 val 0.8282 | exactitud 0.8333
+19:11:06 | epoca  5 | perdida 0.0898 | f1 val 0.8514 | exactitud 0.8633
+19:11:06 | parada temprana en la epoca 5 (paciencia 3)
+19:11:06 | [mobilenetv3_small_100/baseline/agrupada/s42] 'sdnet_P': mejor F1 val 0.8557 en la epoca 2, 6 epocas, 0.6 min
+19:11:09 |     F1 por destino: sdnet_D 0.721, sdnet_P 0.802, sdnet_W 0.633, metu 0.867
+19:11:09 | [mobilenetv3_small_100/baseline/agrupada/s42] entrenando en 'sdnet_W'
+19:11:15 | epoca  0 | perdida 2.0382 | f1 val 0.6594 | exactitud 0.6350
+19:11:20 | epoca  1 | perdida 0.5973 | f1 val 0.7503 | exactitud 0.6883
+19:11:26 | epoca  2 | perdida 0.5898 | f1 val 0.8006 | exactitud 0.7900
+19:11:31 | epoca  3 | perdida 0.3023 | f1 val 0.8172 | exactitud 0.8083
+19:11:37 | epoca  4 | perdida 0.2163 | f1 val 0.8109 | exactitud 0.8150
+19:11:42 | epoca  5 | perdida 0.1318 | f1 val 0.7847 | exactitud 0.8033
+19:11:48 | epoca  6 | perdida 0.0999 | f1 val 0.8132 | exactitud 0.8117
+19:11:48 | parada temprana en la epoca 6 (paciencia 3)
+19:11:48 | [mobilenetv3_small_100/baseline/agrupada/s42] 'sdnet_W': mejor F1 val 0.8172 en la epoca 3, 7 epocas, 0.7 min
+19:11:51 |     F1 por destino: sdnet_D 0.749, sdnet_P 0.637, sdnet_W 0.787, metu 0.522
+19:11:51 | [mobilenetv3_small_100/baseline/agrupada/s42] entrenando en 'metu'
+19:12:06 | epoca  0 | perdida 0.9394 | f1 val 0.9866 | exactitud 0.9867
+19:12:12 | epoca  1 | perdida 0.0409 | f1 val 0.9950 | exactitud 0.9950
+19:12:17 | epoca  2 | perdida 0.0288 | f1 val 0.9983 | exactitud 0.9983
+19:12:23 | epoca  3 | perdida 0.0194 | f1 val 0.9933 | exactitud 0.9933
+19:12:29 | epoca  4 | perdida 0.0156 | f1 val 1.0000 | exactitud 1.0000
+19:12:35 | epoca  5 | perdida 0.0029 | f1 val 1.0000 | exactitud 1.0000
+19:12:40 | epoca  6 | perdida 0.0001 | f1 val 1.0000 | exactitud 1.0000
+19:12:46 | epoca  7 | perdida 0.0005 | f1 val 1.0000 | exactitud 1.0000
+19:12:46 | parada temprana en la epoca 7 (paciencia 3)
+19:12:46 | [mobilenetv3_small_100/baseline/agrupada/s42] 'metu': mejor F1 val 1.0000 en la epoca 4, 8 epocas, 0.9 min
+19:12:49 |     F1 por destino: sdnet_D 0.485, sdnet_P 0.664, sdnet_W 0.460, metu 1.000
+19:12:49 | [mobilenetv3_small_100/baseline/s42] 4 origenes en 3.6 min
+19:12:49 | [mobilenetv3_small_100/baseline/agrupada/s43] entrenando en 'sdnet_D'
+19:12:55 | epoca  0 | perdida 2.6398 | f1 val 0.6847 | exactitud 0.7283
+19:13:01 | epoca  1 | perdida 0.6491 | f1 val 0.7571 | exactitud 0.7583
+19:13:07 | epoca  2 | perdida 0.4325 | f1 val 0.6932 | exactitud 0.6017
+19:13:13 | epoca  3 | perdida 0.4874 | f1 val 0.7533 | exactitud 0.7850
+19:13:19 | epoca  4 | perdida 0.2464 | f1 val 0.7335 | exactitud 0.7650
+19:13:19 | parada temprana en la epoca 4 (paciencia 3)
+19:13:19 | [mobilenetv3_small_100/baseline/agrupada/s43] 'sdnet_D': mejor F1 val 0.7571 en la epoca 1, 5 epocas, 0.5 min
+19:13:21 |     F1 por destino: sdnet_D 0.748, sdnet_P 0.319, sdnet_W 0.675, metu 0.755
+19:13:21 | [mobilenetv3_small_100/baseline/agrupada/s43] entrenando en 'sdnet_P'
+19:13:27 | epoca  0 | perdida 2.1082 | f1 val 0.7596 | exactitud 0.7500
+19:13:33 | epoca  1 | perdida 0.6363 | f1 val 0.8259 | exactitud 0.8300
+19:13:39 | epoca  2 | perdida 0.3330 | f1 val 0.8656 | exactitud 0.8633
+19:13:44 | epoca  3 | perdida 0.3321 | f1 val 0.8391 | exactitud 0.8517
+19:13:50 | epoca  4 | perdida 0.2292 | f1 val 0.8301 | exactitud 0.8383
+19:13:56 | epoca  5 | perdida 0.1410 | f1 val 0.8432 | exactitud 0.8450
+19:13:56 | parada temprana en la epoca 5 (paciencia 3)
+19:13:56 | [mobilenetv3_small_100/baseline/agrupada/s43] 'sdnet_P': mejor F1 val 0.8656 en la epoca 2, 6 epocas, 0.6 min
+19:13:58 |     F1 por destino: sdnet_D 0.697, sdnet_P 0.849, sdnet_W 0.609, metu 0.988
+19:13:58 | [mobilenetv3_small_100/baseline/agrupada/s43] entrenando en 'sdnet_W'
+19:14:04 | epoca  0 | perdida 2.4866 | f1 val 0.7165 | exactitud 0.7533
+19:14:10 | epoca  1 | perdida 0.6743 | f1 val 0.7165 | exactitud 0.7283
+19:14:16 | epoca  2 | perdida 0.4359 | f1 val 0.7228 | exactitud 0.6267
+19:14:22 | epoca  3 | perdida 0.4962 | f1 val 0.7892 | exactitud 0.7783
+19:14:28 | epoca  4 | perdida 0.2074 | f1 val 0.8063 | exactitud 0.8167
+19:14:34 | epoca  5 | perdida 0.1528 | f1 val 0.7964 | exactitud 0.8117
+19:14:39 | epoca  6 | perdida 0.1241 | f1 val 0.8254 | exactitud 0.8167
+19:14:45 | epoca  7 | perdida 0.0711 | f1 val 0.8190 | exactitud 0.8217
+19:14:51 | epoca  8 | perdida 0.0505 | f1 val 0.8275 | exactitud 0.8200
+19:14:57 | epoca  9 | perdida 0.0369 | f1 val 0.8247 | exactitud 0.8250
+19:15:03 | epoca 10 | perdida 0.0407 | f1 val 0.8243 | exactitud 0.8267
+19:15:08 | epoca 11 | perdida 0.0388 | f1 val 0.8223 | exactitud 0.8250
+19:15:08 | parada temprana en la epoca 11 (paciencia 3)
+19:15:08 | [mobilenetv3_small_100/baseline/agrupada/s43] 'sdnet_W': mejor F1 val 0.8275 en la epoca 8, 12 epocas, 1.2 min
+19:15:11 |     F1 por destino: sdnet_D 0.731, sdnet_P 0.537, sdnet_W 0.820, metu 0.595
+19:15:11 | [mobilenetv3_small_100/baseline/agrupada/s43] entrenando en 'metu'
+19:15:17 | epoca  0 | perdida 0.8806 | f1 val 0.9950 | exactitud 0.9950
+19:15:22 | epoca  1 | perdida 0.0390 | f1 val 0.9899 | exactitud 0.9900
+19:15:28 | epoca  2 | perdida 0.0367 | f1 val 0.9983 | exactitud 0.9983
+19:15:34 | epoca  3 | perdida 0.0151 | f1 val 0.9983 | exactitud 0.9983
+19:15:40 | epoca  4 | perdida 0.0133 | f1 val 1.0000 | exactitud 1.0000
+19:15:46 | epoca  5 | perdida 0.0000 | f1 val 0.9967 | exactitud 0.9967
+19:15:51 | epoca  6 | perdida 0.0003 | f1 val 0.9967 | exactitud 0.9967
+19:15:57 | epoca  7 | perdida 0.0000 | f1 val 0.9967 | exactitud 0.9967
+19:15:57 | parada temprana en la epoca 7 (paciencia 3)
+19:15:57 | [mobilenetv3_small_100/baseline/agrupada/s43] 'metu': mejor F1 val 1.0000 en la epoca 4, 8 epocas, 0.8 min
+19:16:00 |     F1 por destino: sdnet_D 0.549, sdnet_P 0.521, sdnet_W 0.566, metu 0.998
+19:16:00 | [mobilenetv3_small_100/baseline/s43] 4 origenes en 3.2 min
+19:16:00 | [mobilenetv3_small_100/baseline/agrupada/s44] entrenando en 'sdnet_D'
+19:16:06 | epoca  0 | perdida 2.1416 | f1 val 0.5178 | exactitud 0.6617
+19:16:13 | epoca  1 | perdida 0.9374 | f1 val 0.7275 | exactitud 0.6717
+19:16:19 | epoca  2 | perdida 0.5416 | f1 val 0.7314 | exactitud 0.6867
+19:16:25 | epoca  3 | perdida 0.3600 | f1 val 0.7290 | exactitud 0.7633
+19:16:31 | epoca  4 | perdida 0.2180 | f1 val 0.7396 | exactitud 0.7500
+19:16:38 | epoca  5 | perdida 0.1732 | f1 val 0.7617 | exactitud 0.7717
+19:16:43 | epoca  6 | perdida 0.1166 | f1 val 0.7626 | exactitud 0.7717
+19:16:49 | epoca  7 | perdida 0.0827 | f1 val 0.7541 | exactitud 0.7750
+19:16:55 | epoca  8 | perdida 0.0588 | f1 val 0.7500 | exactitud 0.7700
+19:17:00 | epoca  9 | perdida 0.0440 | f1 val 0.7606 | exactitud 0.7733
+19:17:00 | parada temprana en la epoca 9 (paciencia 3)
+19:17:00 | [mobilenetv3_small_100/baseline/agrupada/s44] 'sdnet_D': mejor F1 val 0.7626 en la epoca 6, 10 epocas, 1.0 min
+19:17:03 |     F1 por destino: sdnet_D 0.786, sdnet_P 0.315, sdnet_W 0.650, metu 0.681
+19:17:03 | [mobilenetv3_small_100/baseline/agrupada/s44] entrenando en 'sdnet_P'
+19:17:09 | epoca  0 | perdida 2.1013 | f1 val 0.7829 | exactitud 0.7967
+19:17:15 | epoca  1 | perdida 0.7043 | f1 val 0.7520 | exactitud 0.6900
+19:17:21 | epoca  2 | perdida 0.3802 | f1 val 0.8471 | exactitud 0.8483
+19:17:27 | epoca  3 | perdida 0.2068 | f1 val 0.8360 | exactitud 0.8450
+19:17:34 | epoca  4 | perdida 0.1646 | f1 val 0.8362 | exactitud 0.8283
+19:17:40 | epoca  5 | perdida 0.1086 | f1 val 0.8557 | exactitud 0.8550
+19:17:46 | epoca  6 | perdida 0.0814 | f1 val 0.8637 | exactitud 0.8617
+19:17:53 | epoca  7 | perdida 0.0430 | f1 val 0.8724 | exactitud 0.8767
+19:17:59 | epoca  8 | perdida 0.0342 | f1 val 0.8652 | exactitud 0.8733
+19:18:07 | epoca  9 | perdida 0.0274 | f1 val 0.8769 | exactitud 0.8783
+19:18:13 | epoca 10 | perdida 0.0203 | f1 val 0.8776 | exactitud 0.8800
+19:18:19 | epoca 11 | perdida 0.0241 | f1 val 0.8790 | exactitud 0.8817
+19:18:19 | [mobilenetv3_small_100/baseline/agrupada/s44] 'sdnet_P': mejor F1 val 0.8790 en la epoca 11, 12 epocas, 1.3 min
+19:18:22 |     F1 por destino: sdnet_D 0.754, sdnet_P 0.836, sdnet_W 0.672, metu 0.939
+19:18:22 | [mobilenetv3_small_100/baseline/agrupada/s44] entrenando en 'sdnet_W'
+19:18:28 | epoca  0 | perdida 1.8380 | f1 val 0.7608 | exactitud 0.7150
+19:18:35 | epoca  1 | perdida 0.6204 | f1 val 0.7906 | exactitud 0.7783
+19:18:41 | epoca  2 | perdida 0.4308 | f1 val 0.7786 | exactitud 0.7450
+19:18:47 | epoca  3 | perdida 0.3768 | f1 val 0.7705 | exactitud 0.7717
+19:18:53 | epoca  4 | perdida 0.2255 | f1 val 0.7613 | exactitud 0.7283
+19:18:53 | parada temprana en la epoca 4 (paciencia 3)
+19:18:53 | [mobilenetv3_small_100/baseline/agrupada/s44] 'sdnet_W': mejor F1 val 0.7906 en la epoca 1, 5 epocas, 0.5 min
+19:18:56 |     F1 por destino: sdnet_D 0.717, sdnet_P 0.586, sdnet_W 0.803, metu 0.560
+19:18:56 | [mobilenetv3_small_100/baseline/agrupada/s44] entrenando en 'metu'
+19:19:02 | epoca  0 | perdida 0.5447 | f1 val 0.9933 | exactitud 0.9933
+19:19:07 | epoca  1 | perdida 0.0730 | f1 val 0.9933 | exactitud 0.9933
+19:19:13 | epoca  2 | perdida 0.0197 | f1 val 0.9917 | exactitud 0.9917
+19:19:19 | epoca  3 | perdida 0.0117 | f1 val 0.9983 | exactitud 0.9983
+19:19:25 | epoca  4 | perdida 0.0110 | f1 val 0.9983 | exactitud 0.9983
+19:19:30 | epoca  5 | perdida 0.0178 | f1 val 1.0000 | exactitud 1.0000
+19:19:36 | epoca  6 | perdida 0.0010 | f1 val 0.9983 | exactitud 0.9983
+19:19:42 | epoca  7 | perdida 0.0013 | f1 val 1.0000 | exactitud 1.0000
+19:19:48 | epoca  8 | perdida 0.0004 | f1 val 1.0000 | exactitud 1.0000
+19:19:48 | parada temprana en la epoca 8 (paciencia 3)
+19:19:48 | [mobilenetv3_small_100/baseline/agrupada/s44] 'metu': mejor F1 val 1.0000 en la epoca 5, 9 epocas, 0.9 min
+19:19:51 |     F1 por destino: sdnet_D 0.395, sdnet_P 0.455, sdnet_W 0.312, metu 0.997
+19:19:51 | [mobilenetv3_small_100/baseline/s44] 4 origenes en 3.9 min
+19:19:51 | [vit_tiny_patch16_224/baseline/agrupada/s42] entrenando en 'sdnet_D'
+19:19:58 | epoca  0 | perdida 0.9422 | f1 val 0.5429 | exactitud 0.6717
+19:20:05 | epoca  1 | perdida 0.5602 | f1 val 0.7104 | exactitud 0.6833
+19:20:12 | epoca  2 | perdida 0.4952 | f1 val 0.7591 | exactitud 0.7567
+19:20:19 | epoca  3 | perdida 0.4555 | f1 val 0.7586 | exactitud 0.7317
+19:20:26 | epoca  4 | perdida 0.4297 | f1 val 0.7331 | exactitud 0.7633
+19:20:33 | epoca  5 | perdida 0.3688 | f1 val 0.7481 | exactitud 0.7733
+19:20:33 | parada temprana en la epoca 5 (paciencia 3)
+19:20:33 | [vit_tiny_patch16_224/baseline/agrupada/s42] 'sdnet_D': mejor F1 val 0.7591 en la epoca 2, 6 epocas, 0.7 min
+19:20:35 |     F1 por destino: sdnet_D 0.787, sdnet_P 0.694, sdnet_W 0.728, metu 0.555
+19:20:36 | [vit_tiny_patch16_224/baseline/agrupada/s42] entrenando en 'sdnet_P'
+19:20:43 | epoca  0 | perdida 0.6531 | f1 val 0.8506 | exactitud 0.8467
+19:20:50 | epoca  1 | perdida 0.3330 | f1 val 0.8377 | exactitud 0.8333
+19:20:57 | epoca  2 | perdida 0.2891 | f1 val 0.8459 | exactitud 0.8433
+19:21:04 | epoca  3 | perdida 0.2233 | f1 val 0.8513 | exactitud 0.8417
+19:21:11 | epoca  4 | perdida 0.1656 | f1 val 0.8365 | exactitud 0.8267
+19:21:17 | epoca  5 | perdida 0.1316 | f1 val 0.8458 | exactitud 0.8450
+19:21:24 | epoca  6 | perdida 0.0709 | f1 val 0.8487 | exactitud 0.8467
+19:21:24 | parada temprana en la epoca 6 (paciencia 3)
+19:21:24 | [vit_tiny_patch16_224/baseline/agrupada/s42] 'sdnet_P': mejor F1 val 0.8513 en la epoca 3, 7 epocas, 0.8 min
+19:21:27 |     F1 por destino: sdnet_D 0.767, sdnet_P 0.845, sdnet_W 0.743, metu 0.928
+19:21:27 | [vit_tiny_patch16_224/baseline/agrupada/s42] entrenando en 'sdnet_W'
+19:21:34 | epoca  0 | perdida 0.8697 | f1 val 0.7887 | exactitud 0.8000
+19:21:41 | epoca  1 | perdida 0.4436 | f1 val 0.7039 | exactitud 0.7700
+19:21:48 | epoca  2 | perdida 0.3757 | f1 val 0.8386 | exactitud 0.8383
+19:21:55 | epoca  3 | perdida 0.3527 | f1 val 0.8116 | exactitud 0.8267
+19:22:02 | epoca  4 | perdida 0.2836 | f1 val 0.8211 | exactitud 0.8250
+19:22:09 | epoca  5 | perdida 0.2260 | f1 val 0.8204 | exactitud 0.8300
+19:22:09 | parada temprana en la epoca 5 (paciencia 3)
+19:22:09 | [vit_tiny_patch16_224/baseline/agrupada/s42] 'sdnet_W': mejor F1 val 0.8386 en la epoca 2, 6 epocas, 0.7 min
+19:22:12 |     F1 por destino: sdnet_D 0.731, sdnet_P 0.696, sdnet_W 0.855, metu 0.628
+19:22:12 | [vit_tiny_patch16_224/baseline/agrupada/s42] entrenando en 'metu'
+19:22:19 | epoca  0 | perdida 0.3031 | f1 val 0.9916 | exactitud 0.9917
+19:22:26 | epoca  1 | perdida 0.0109 | f1 val 1.0000 | exactitud 1.0000
+19:22:33 | epoca  2 | perdida 0.0035 | f1 val 0.9983 | exactitud 0.9983
+19:22:39 | epoca  3 | perdida 0.0004 | f1 val 0.9967 | exactitud 0.9967
+19:22:46 | epoca  4 | perdida 0.0066 | f1 val 0.9983 | exactitud 0.9983
+19:22:46 | parada temprana en la epoca 4 (paciencia 3)
+19:22:46 | [vit_tiny_patch16_224/baseline/agrupada/s42] 'metu': mejor F1 val 1.0000 en la epoca 1, 5 epocas, 0.6 min
+19:22:49 |     F1 por destino: sdnet_D 0.441, sdnet_P 0.676, sdnet_W 0.462, metu 0.998
+19:22:49 | [vit_tiny_patch16_224/baseline/s42] 4 origenes en 3.0 min
+19:22:49 | [vit_tiny_patch16_224/baseline/agrupada/s43] entrenando en 'sdnet_D'
+19:22:56 | epoca  0 | perdida 0.6676 | f1 val 0.6585 | exactitud 0.7217
+19:23:04 | epoca  1 | perdida 0.4813 | f1 val 0.7486 | exactitud 0.7683
+19:23:10 | epoca  2 | perdida 0.4334 | f1 val 0.7596 | exactitud 0.7383
+19:23:17 | epoca  3 | perdida 0.4154 | f1 val 0.7336 | exactitud 0.7700
+19:23:24 | epoca  4 | perdida 0.3658 | f1 val 0.7350 | exactitud 0.7717
+19:23:30 | epoca  5 | perdida 0.3318 | f1 val 0.7582 | exactitud 0.7800
+19:23:30 | parada temprana en la epoca 5 (paciencia 3)
+19:23:31 | [vit_tiny_patch16_224/baseline/agrupada/s43] 'sdnet_D': mejor F1 val 0.7596 en la epoca 2, 6 epocas, 0.7 min
+19:23:33 |     F1 por destino: sdnet_D 0.774, sdnet_P 0.697, sdnet_W 0.714, metu 0.644
+19:23:33 | [vit_tiny_patch16_224/baseline/agrupada/s43] entrenando en 'sdnet_P'
+19:23:40 | epoca  0 | perdida 0.5796 | f1 val 0.8012 | exactitud 0.7750
+19:23:47 | epoca  1 | perdida 0.3221 | f1 val 0.8321 | exactitud 0.8500
+19:23:54 | epoca  2 | perdida 0.2793 | f1 val 0.8401 | exactitud 0.8217
+19:24:01 | epoca  3 | perdida 0.2061 | f1 val 0.8576 | exactitud 0.8650
+19:24:08 | epoca  4 | perdida 0.1658 | f1 val 0.8609 | exactitud 0.8600
+19:24:15 | epoca  5 | perdida 0.1178 | f1 val 0.8634 | exactitud 0.8650
+19:24:22 | epoca  6 | perdida 0.0667 | f1 val 0.8621 | exactitud 0.8683
+19:24:28 | epoca  7 | perdida 0.0420 | f1 val 0.8862 | exactitud 0.8883
+19:24:35 | epoca  8 | perdida 0.0222 | f1 val 0.8735 | exactitud 0.8750
+19:24:42 | epoca  9 | perdida 0.0052 | f1 val 0.8778 | exactitud 0.8817
+19:24:49 | epoca 10 | perdida 0.0029 | f1 val 0.8682 | exactitud 0.8700
+19:24:49 | parada temprana en la epoca 10 (paciencia 3)
+19:24:49 | [vit_tiny_patch16_224/baseline/agrupada/s43] 'sdnet_P': mejor F1 val 0.8862 en la epoca 7, 11 epocas, 1.3 min
+19:24:52 |     F1 por destino: sdnet_D 0.786, sdnet_P 0.839, sdnet_W 0.706, metu 0.929
+19:24:52 | [vit_tiny_patch16_224/baseline/agrupada/s43] entrenando en 'sdnet_W'
+19:25:00 | epoca  0 | perdida 0.6509 | f1 val 0.6275 | exactitud 0.7250
+19:25:07 | epoca  1 | perdida 0.4278 | f1 val 0.8187 | exactitud 0.8250
+19:25:13 | epoca  2 | perdida 0.3612 | f1 val 0.7901 | exactitud 0.8167
+19:25:20 | epoca  3 | perdida 0.3185 | f1 val 0.7915 | exactitud 0.8200
+19:25:27 | epoca  4 | perdida 0.2690 | f1 val 0.8007 | exactitud 0.8217
+19:25:27 | parada temprana en la epoca 4 (paciencia 3)
+19:25:27 | [vit_tiny_patch16_224/baseline/agrupada/s43] 'sdnet_W': mejor F1 val 0.8187 en la epoca 1, 5 epocas, 0.6 min
+19:25:30 |     F1 por destino: sdnet_D 0.743, sdnet_P 0.637, sdnet_W 0.837, metu 0.571
+19:25:30 | [vit_tiny_patch16_224/baseline/agrupada/s43] entrenando en 'metu'
+19:25:37 | epoca  0 | perdida 0.2210 | f1 val 0.9899 | exactitud 0.9900
+19:25:44 | epoca  1 | perdida 0.0122 | f1 val 0.9933 | exactitud 0.9933
+19:25:51 | epoca  2 | perdida 0.0127 | f1 val 1.0000 | exactitud 1.0000
+19:25:58 | epoca  3 | perdida 0.0053 | f1 val 0.9983 | exactitud 0.9983
+19:26:05 | epoca  4 | perdida 0.0052 | f1 val 0.9983 | exactitud 0.9983
+19:26:11 | epoca  5 | perdida 0.0008 | f1 val 0.9983 | exactitud 0.9983
+19:26:11 | parada temprana en la epoca 5 (paciencia 3)
+19:26:11 | [vit_tiny_patch16_224/baseline/agrupada/s43] 'metu': mejor F1 val 1.0000 en la epoca 2, 6 epocas, 0.7 min
+19:26:14 |     F1 por destino: sdnet_D 0.459, sdnet_P 0.716, sdnet_W 0.460, metu 0.998
+19:26:14 | [vit_tiny_patch16_224/baseline/s43] 4 origenes en 3.4 min
+19:26:14 | [vit_tiny_patch16_224/baseline/agrupada/s44] entrenando en 'sdnet_D'
+19:26:22 | epoca  0 | perdida 0.9440 | f1 val 0.7049 | exactitud 0.6917
+19:26:29 | epoca  1 | perdida 0.5400 | f1 val 0.6849 | exactitud 0.7117
+19:26:36 | epoca  2 | perdida 0.5135 | f1 val 0.7708 | exactitud 0.7700
+19:26:42 | epoca  3 | perdida 0.4626 | f1 val 0.7165 | exactitud 0.7533
+19:26:49 | epoca  4 | perdida 0.4214 | f1 val 0.7269 | exactitud 0.7483
+19:26:56 | epoca  5 | perdida 0.3851 | f1 val 0.7439 | exactitud 0.7717
+19:26:56 | parada temprana en la epoca 5 (paciencia 3)
+19:26:56 | [vit_tiny_patch16_224/baseline/agrupada/s44] 'sdnet_D': mejor F1 val 0.7708 en la epoca 2, 6 epocas, 0.7 min
+19:26:59 |     F1 por destino: sdnet_D 0.780, sdnet_P 0.671, sdnet_W 0.674, metu 0.539
+19:26:59 | [vit_tiny_patch16_224/baseline/agrupada/s44] entrenando en 'sdnet_P'
+19:27:06 | epoca  0 | perdida 0.5824 | f1 val 0.7566 | exactitud 0.8017
+19:27:13 | epoca  1 | perdida 0.3497 | f1 val 0.7941 | exactitud 0.8150
+19:27:20 | epoca  2 | perdida 0.3027 | f1 val 0.8137 | exactitud 0.7917
+19:27:26 | epoca  3 | perdida 0.2348 | f1 val 0.8468 | exactitud 0.8383
+19:27:33 | epoca  4 | perdida 0.1904 | f1 val 0.8644 | exactitud 0.8667
+19:27:40 | epoca  5 | perdida 0.1154 | f1 val 0.8464 | exactitud 0.8500
+19:27:46 | epoca  6 | perdida 0.0943 | f1 val 0.8456 | exactitud 0.8533
+19:27:53 | epoca  7 | perdida 0.0416 | f1 val 0.8506 | exactitud 0.8583
+19:27:53 | parada temprana en la epoca 7 (paciencia 3)
+19:27:53 | [vit_tiny_patch16_224/baseline/agrupada/s44] 'sdnet_P': mejor F1 val 0.8644 en la epoca 4, 8 epocas, 0.9 min
+19:27:56 |     F1 por destino: sdnet_D 0.794, sdnet_P 0.832, sdnet_W 0.726, metu 0.924
+19:27:56 | [vit_tiny_patch16_224/baseline/agrupada/s44] entrenando en 'sdnet_W'
+19:28:03 | epoca  0 | perdida 0.6290 | f1 val 0.7907 | exactitud 0.8200
+19:28:10 | epoca  1 | perdida 0.4908 | f1 val 0.8188 | exactitud 0.8133
+19:28:17 | epoca  2 | perdida 0.3491 | f1 val 0.8366 | exactitud 0.8483
+19:28:24 | epoca  3 | perdida 0.2946 | f1 val 0.8351 | exactitud 0.8467
+19:28:30 | epoca  4 | perdida 0.2381 | f1 val 0.8566 | exactitud 0.8617
+19:28:37 | epoca  5 | perdida 0.1966 | f1 val 0.8284 | exactitud 0.8350
+19:28:44 | epoca  6 | perdida 0.1579 | f1 val 0.8307 | exactitud 0.8383
+19:28:51 | epoca  7 | perdida 0.0926 | f1 val 0.8325 | exactitud 0.8350
+19:28:51 | parada temprana en la epoca 7 (paciencia 3)
+19:28:51 | [vit_tiny_patch16_224/baseline/agrupada/s44] 'sdnet_W': mejor F1 val 0.8566 en la epoca 4, 8 epocas, 0.9 min
+19:28:53 |     F1 por destino: sdnet_D 0.767, sdnet_P 0.643, sdnet_W 0.831, metu 0.516
+19:28:54 | [vit_tiny_patch16_224/baseline/agrupada/s44] entrenando en 'metu'
+19:29:00 | epoca  0 | perdida 0.0937 | f1 val 0.9899 | exactitud 0.9900
+19:29:08 | epoca  1 | perdida 0.0082 | f1 val 0.9967 | exactitud 0.9967
+19:29:14 | epoca  2 | perdida 0.0023 | f1 val 0.9983 | exactitud 0.9983
+19:29:21 | epoca  3 | perdida 0.0024 | f1 val 0.9967 | exactitud 0.9967
+19:29:28 | epoca  4 | perdida 0.0017 | f1 val 1.0000 | exactitud 1.0000
+19:29:35 | epoca  5 | perdida 0.0010 | f1 val 0.9983 | exactitud 0.9983
+19:29:42 | epoca  6 | perdida 0.0000 | f1 val 0.9967 | exactitud 0.9967
+19:29:49 | epoca  7 | perdida 0.0000 | f1 val 0.9983 | exactitud 0.9983
+19:29:49 | parada temprana en la epoca 7 (paciencia 3)
+19:29:49 | [vit_tiny_patch16_224/baseline/agrupada/s44] 'metu': mejor F1 val 1.0000 en la epoca 4, 8 epocas, 0.9 min
+19:29:51 |     F1 por destino: sdnet_D 0.391, sdnet_P 0.734, sdnet_W 0.409, metu 0.998
+19:29:51 | [vit_tiny_patch16_224/baseline/s44] 4 origenes en 3.6 min
+19:29:51 | 03_experiment.py terminado en 55.1 min.

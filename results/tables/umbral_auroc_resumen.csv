@@ -1,0 +1,13 @@
+regimen,direccion,auroc,ap,f1_05,f1_k20,f1_k50,f1_k100,f1_techo,celdas_auroc_bajo_0.7
+fine-tuning,dentro,0.927,0.94,0.867,0.84,0.854,0.86,0.875,0
+fine-tuning,entre_superficie,0.782,0.817,0.654,0.692,0.705,0.711,0.731,8
+fine-tuning,metu_a_sdnet,0.699,0.707,0.437,0.651,0.673,0.682,0.696,20
+fine-tuning,sdnet_a_metu,0.847,0.868,0.782,0.782,0.799,0.806,0.822,8
+linear probe,dentro,0.916,0.929,0.851,0.822,0.84,0.847,0.863,0
+linear probe,entre_superficie,0.806,0.839,0.678,0.706,0.717,0.723,0.744,0
+linear probe,metu_a_sdnet,0.735,0.737,0.402,0.675,0.691,0.698,0.717,14
+linear probe,sdnet_a_metu,0.897,0.92,0.828,0.821,0.839,0.845,0.861,4
+scale augmentation,dentro,0.93,0.942,0.87,0.844,0.858,0.864,0.878,0
+scale augmentation,entre_superficie,0.782,0.817,0.663,0.69,0.701,0.706,0.728,7
+scale augmentation,metu_a_sdnet,0.706,0.713,0.492,0.655,0.675,0.685,0.7,20
+scale augmentation,sdnet_a_metu,0.82,0.853,0.76,0.772,0.792,0.799,0.814,10

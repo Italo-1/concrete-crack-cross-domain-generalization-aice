@@ -1,0 +1,100 @@
+19:30:04 | [resnet18] caracteristicas en cache: resnet18.npz
+19:30:06 | [resnet18/sonda/s42] 'sdnet_D': F1 val 0.7500 (epoca 62/73) | sdnet_D 0.761, sdnet_P 0.639, sdnet_W 0.639, metu 0.767
+19:30:08 | [resnet18/sonda/s42] 'sdnet_P': F1 val 0.8239 (epoca 51/62) | sdnet_D 0.700, sdnet_P 0.814, sdnet_W 0.592, metu 0.944
+19:30:10 | [resnet18/sonda/s42] 'sdnet_W': F1 val 0.7729 (epoca 51/62) | sdnet_D 0.707, sdnet_P 0.784, sdnet_W 0.759, metu 0.873
+19:30:11 | [resnet18/sonda/s42] 'metu': F1 val 0.9916 (epoca 12/23) | sdnet_D 0.315, sdnet_P 0.651, sdnet_W 0.255, metu 0.992
+19:30:12 | [resnet18/sonda/s43] 'sdnet_D': F1 val 0.7505 (epoca 59/70) | sdnet_D 0.763, sdnet_P 0.664, sdnet_W 0.648, metu 0.789
+19:30:13 | [resnet18/sonda/s43] 'sdnet_P': F1 val 0.8148 (epoca 19/30) | sdnet_D 0.600, sdnet_P 0.801, sdnet_W 0.491, metu 0.971
+19:30:15 | [resnet18/sonda/s43] 'sdnet_W': F1 val 0.7741 (epoca 56/67) | sdnet_D 0.714, sdnet_P 0.792, sdnet_W 0.754, metu 0.871
+19:30:16 | [resnet18/sonda/s43] 'metu': F1 val 0.9916 (epoca 13/24) | sdnet_D 0.319, sdnet_P 0.650, sdnet_W 0.241, metu 0.992
+19:30:17 | [resnet18/sonda/s44] 'sdnet_D': F1 val 0.7495 (epoca 50/61) | sdnet_D 0.757, sdnet_P 0.652, sdnet_W 0.624, metu 0.813
+19:30:19 | [resnet18/sonda/s44] 'sdnet_P': F1 val 0.8121 (epoca 28/39) | sdnet_D 0.634, sdnet_P 0.806, sdnet_W 0.519, metu 0.966
+19:30:20 | [resnet18/sonda/s44] 'sdnet_W': F1 val 0.7751 (epoca 56/67) | sdnet_D 0.707, sdnet_P 0.797, sdnet_W 0.766, metu 0.871
+19:30:21 | [resnet18/sonda/s44] 'metu': F1 val 0.9916 (epoca 16/27) | sdnet_D 0.310, sdnet_P 0.645, sdnet_W 0.252, metu 0.992
+19:30:44 | [efficientnet_b0] 'sdnet_D': caracteristicas 1280-d extraidas
+19:30:51 | [efficientnet_b0] 'sdnet_P': caracteristicas 1280-d extraidas
+19:30:57 | [efficientnet_b0] 'sdnet_W': caracteristicas 1280-d extraidas
+19:31:04 | [efficientnet_b0] 'metu': caracteristicas 1280-d extraidas
+19:31:05 | [efficientnet_b0/sonda/s42] 'sdnet_D': F1 val 0.7955 (epoca 43/54) | sdnet_D 0.800, sdnet_P 0.646, sdnet_W 0.736, metu 0.870
+19:31:07 | [efficientnet_b0/sonda/s42] 'sdnet_P': F1 val 0.8795 (epoca 50/61) | sdnet_D 0.748, sdnet_P 0.857, sdnet_W 0.610, metu 0.957
+19:31:09 | [efficientnet_b0/sonda/s42] 'sdnet_W': F1 val 0.8399 (epoca 44/55) | sdnet_D 0.718, sdnet_P 0.745, sdnet_W 0.857, metu 0.855
+Traceback (most recent call last):
+  File "C:\lineaB\06-aice-P1\src\03b_sonda_lineal.py", line 197, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "C:\lineaB\06-aice-P1\src\03b_sonda_lineal.py", line 188, in main
+    exp.anexar([{"arquitectura": arquitectura, "semilla": semilla, "condicion": "sonda_lineal",
+  File "C:\lineaB\06-aice-P1\src\03_experiment.py", line 169, in anexar
+    combinado.to_csv(ruta, index=False)
+  File "C:\lineaB\.venv\Lib\site-packages\pandas\core\generic.py", line 3976, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\lineaB\.venv\Lib\site-packages\pandas\io\formats\format.py", line 1025, in to_csv
+    csv_formatter.save()
+  File "C:\lineaB\.venv\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\lineaB\.venv\Lib\site-packages\pandas\io\common.py", line 930, in get_handle
+    handle = open(
+             ^^^^^
+OSError: [Errno 22] Invalid argument: 'C:\\lineaB\\06-aice-P1\\results\\tables\\historial_sonda.csv'
+19:58:45 | [resnet18] caracteristicas en cache: resnet18.npz
+19:58:45 | [resnet18/sonda/s42] 'sdnet_D' ya hecho, se salta
+19:58:45 | [resnet18/sonda/s42] 'sdnet_P' ya hecho, se salta
+19:58:45 | [resnet18/sonda/s42] 'sdnet_W' ya hecho, se salta
+19:58:45 | [resnet18/sonda/s42] 'metu' ya hecho, se salta
+19:58:45 | [resnet18/sonda/s43] 'sdnet_D' ya hecho, se salta
+19:58:45 | [resnet18/sonda/s43] 'sdnet_P' ya hecho, se salta
+19:58:45 | [resnet18/sonda/s43] 'sdnet_W' ya hecho, se salta
+19:58:45 | [resnet18/sonda/s43] 'metu' ya hecho, se salta
+19:58:45 | [resnet18/sonda/s44] 'sdnet_D' ya hecho, se salta
+19:58:45 | [resnet18/sonda/s44] 'sdnet_P' ya hecho, se salta
+19:58:45 | [resnet18/sonda/s44] 'sdnet_W' ya hecho, se salta
+19:58:45 | [resnet18/sonda/s44] 'metu' ya hecho, se salta
+19:58:45 | [efficientnet_b0] caracteristicas en cache: efficientnet_b0.npz
+19:58:45 | [efficientnet_b0/sonda/s42] 'sdnet_D' ya hecho, se salta
+19:58:45 | [efficientnet_b0/sonda/s42] 'sdnet_P' ya hecho, se salta
+19:58:47 | [efficientnet_b0/sonda/s42] 'sdnet_W': F1 val 0.8399 (epoca 44/55) | sdnet_D 0.718, sdnet_P 0.745, sdnet_W 0.857, metu 0.855
+19:58:49 | [efficientnet_b0/sonda/s42] 'metu': F1 val 0.9983 (epoca 13/24) | sdnet_D 0.282, sdnet_P 0.716, sdnet_W 0.278, metu 1.000
+19:58:51 | [efficientnet_b0/sonda/s43] 'sdnet_D': F1 val 0.7924 (epoca 36/47) | sdnet_D 0.801, sdnet_P 0.627, sdnet_W 0.728, metu 0.872
+19:58:53 | [efficientnet_b0/sonda/s43] 'sdnet_P': F1 val 0.8711 (epoca 32/43) | sdnet_D 0.733, sdnet_P 0.845, sdnet_W 0.587, metu 0.966
+19:59:00 | [efficientnet_b0/sonda/s43] 'sdnet_W': F1 val 0.8430 (epoca 54/65) | sdnet_D 0.725, sdnet_P 0.746, sdnet_W 0.857, metu 0.857
+19:59:02 | [efficientnet_b0/sonda/s43] 'metu': F1 val 0.9983 (epoca 14/25) | sdnet_D 0.290, sdnet_P 0.712, sdnet_W 0.281, metu 1.000
+19:59:06 | [efficientnet_b0/sonda/s44] 'sdnet_D': F1 val 0.7925 (epoca 20/31) | sdnet_D 0.795, sdnet_P 0.664, sdnet_W 0.740, metu 0.861
+19:59:10 | [efficientnet_b0/sonda/s44] 'sdnet_P': F1 val 0.8711 (epoca 30/41) | sdnet_D 0.742, sdnet_P 0.849, sdnet_W 0.595, metu 0.974
+19:59:13 | [efficientnet_b0/sonda/s44] 'sdnet_W': F1 val 0.8348 (epoca 14/25) | sdnet_D 0.690, sdnet_P 0.702, sdnet_W 0.847, metu 0.842
+19:59:15 | [efficientnet_b0/sonda/s44] 'metu': F1 val 0.9983 (epoca 12/23) | sdnet_D 0.276, sdnet_P 0.722, sdnet_W 0.280, metu 1.000
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+20:00:00 | [mobilenetv3_small_100] 'sdnet_D': caracteristicas 1024-d extraidas
+20:00:14 | [mobilenetv3_small_100] 'sdnet_P': caracteristicas 1024-d extraidas
+20:00:27 | [mobilenetv3_small_100] 'sdnet_W': caracteristicas 1024-d extraidas
+20:00:42 | [mobilenetv3_small_100] 'metu': caracteristicas 1024-d extraidas
+20:00:46 | [mobilenetv3_small_100/sonda/s42] 'sdnet_D': F1 val 0.7802 (epoca 26/37) | sdnet_D 0.789, sdnet_P 0.582, sdnet_W 0.653, metu 0.630
+20:00:49 | [mobilenetv3_small_100/sonda/s42] 'sdnet_P': F1 val 0.8718 (epoca 30/41) | sdnet_D 0.751, sdnet_P 0.856, sdnet_W 0.612, metu 0.969
+20:00:53 | [mobilenetv3_small_100/sonda/s42] 'sdnet_W': F1 val 0.8081 (epoca 25/36) | sdnet_D 0.705, sdnet_P 0.695, sdnet_W 0.808, metu 0.761
+20:00:54 | [mobilenetv3_small_100/sonda/s42] 'metu': F1 val 0.9983 (epoca 1/12) | sdnet_D 0.251, sdnet_P 0.697, sdnet_W 0.119, metu 0.998
+20:00:58 | [mobilenetv3_small_100/sonda/s43] 'sdnet_D': F1 val 0.7826 (epoca 35/46) | sdnet_D 0.795, sdnet_P 0.591, sdnet_W 0.650, metu 0.619
+20:01:01 | [mobilenetv3_small_100/sonda/s43] 'sdnet_P': F1 val 0.8640 (epoca 16/27) | sdnet_D 0.747, sdnet_P 0.852, sdnet_W 0.600, metu 0.979
+20:01:03 | [mobilenetv3_small_100/sonda/s43] 'sdnet_W': F1 val 0.7945 (epoca 10/21) | sdnet_D 0.713, sdnet_P 0.735, sdnet_W 0.802, metu 0.791
+20:01:04 | [mobilenetv3_small_100/sonda/s43] 'metu': F1 val 0.9983 (epoca 2/13) | sdnet_D 0.237, sdnet_P 0.650, sdnet_W 0.107, metu 1.000
+20:01:06 | [mobilenetv3_small_100/sonda/s44] 'sdnet_D': F1 val 0.7723 (epoca 12/23) | sdnet_D 0.777, sdnet_P 0.569, sdnet_W 0.642, metu 0.752
+20:01:10 | [mobilenetv3_small_100/sonda/s44] 'sdnet_P': F1 val 0.8741 (epoca 37/48) | sdnet_D 0.758, sdnet_P 0.858, sdnet_W 0.619, metu 0.963
+20:01:13 | [mobilenetv3_small_100/sonda/s44] 'sdnet_W': F1 val 0.8090 (epoca 26/37) | sdnet_D 0.710, sdnet_P 0.700, sdnet_W 0.799, metu 0.774
+20:01:15 | [mobilenetv3_small_100/sonda/s44] 'metu': F1 val 0.9983 (epoca 2/13) | sdnet_D 0.188, sdnet_P 0.604, sdnet_W 0.065, metu 1.000
+20:01:32 | [vit_tiny_patch16_224] 'sdnet_D': caracteristicas 192-d extraidas
+20:01:50 | [vit_tiny_patch16_224] 'sdnet_P': caracteristicas 192-d extraidas
+20:02:07 | [vit_tiny_patch16_224] 'sdnet_W': caracteristicas 192-d extraidas
+20:02:22 | [vit_tiny_patch16_224] 'metu': caracteristicas 192-d extraidas
+20:02:24 | [vit_tiny_patch16_224/sonda/s42] 'sdnet_D': F1 val 0.7474 (epoca 15/26) | sdnet_D 0.776, sdnet_P 0.660, sdnet_W 0.660, metu 0.697
+20:02:27 | [vit_tiny_patch16_224/sonda/s42] 'sdnet_P': F1 val 0.8398 (epoca 24/35) | sdnet_D 0.690, sdnet_P 0.807, sdnet_W 0.652, metu 0.876
+20:02:29 | [vit_tiny_patch16_224/sonda/s42] 'sdnet_W': F1 val 0.7973 (epoca 11/22) | sdnet_D 0.703, sdnet_P 0.713, sdnet_W 0.769, metu 0.681
+20:02:31 | [vit_tiny_patch16_224/sonda/s42] 'metu': F1 val 0.9967 (epoca 13/24) | sdnet_D 0.309, sdnet_P 0.705, sdnet_W 0.251, metu 0.998
+20:02:33 | [vit_tiny_patch16_224/sonda/s43] 'sdnet_D': F1 val 0.7626 (epoca 15/26) | sdnet_D 0.777, sdnet_P 0.706, sdnet_W 0.685, metu 0.663
+20:02:35 | [vit_tiny_patch16_224/sonda/s43] 'sdnet_P': F1 val 0.8264 (epoca 18/29) | sdnet_D 0.682, sdnet_P 0.798, sdnet_W 0.690, metu 0.869
+20:02:37 | [vit_tiny_patch16_224/sonda/s43] 'sdnet_W': F1 val 0.8061 (epoca 12/23) | sdnet_D 0.703, sdnet_P 0.711, sdnet_W 0.774, metu 0.660
+20:02:39 | [vit_tiny_patch16_224/sonda/s43] 'metu': F1 val 0.9967 (epoca 5/16) | sdnet_D 0.339, sdnet_P 0.704, sdnet_W 0.296, metu 0.992
+20:02:42 | [vit_tiny_patch16_224/sonda/s44] 'sdnet_D': F1 val 0.7663 (epoca 24/35) | sdnet_D 0.782, sdnet_P 0.664, sdnet_W 0.674, metu 0.625
+20:02:46 | [vit_tiny_patch16_224/sonda/s44] 'sdnet_P': F1 val 0.8342 (epoca 41/52) | sdnet_D 0.693, sdnet_P 0.812, sdnet_W 0.667, metu 0.907
+20:02:48 | [vit_tiny_patch16_224/sonda/s44] 'sdnet_W': F1 val 0.8056 (epoca 19/30) | sdnet_D 0.717, sdnet_P 0.715, sdnet_W 0.778, metu 0.682
+20:02:49 | [vit_tiny_patch16_224/sonda/s44] 'metu': F1 val 0.9967 (epoca 4/15) | sdnet_D 0.382, sdnet_P 0.723, sdnet_W 0.365, metu 0.997
+20:02:49 | 03b_sonda_lineal.py terminado en 4.1 min.

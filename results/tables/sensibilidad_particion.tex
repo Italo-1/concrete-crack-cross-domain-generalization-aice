@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Sensitivity of the within-domain F1 to the split: original patch-level split against a split grouped by source photograph (SDNET2018 subsets; METU file names carry no photograph identifier and keep the original split). Mean over 4 architectures x 3 seeds; paired difference (grouped minus original) with 95\% bootstrap CI.}
+\label{tab:sensibilidad-particion}
+\begin{tabular}{lrrrr}
+\toprule
+Domain & Diagonal, patch split & Diagonal, photo-grouped split & Difference & 95\% CI \\
+\midrule
+SDNET-Deck & 0.791 & 0.787 & -0.004 & -0.022, +0.014 \\
+SDNET-Pavement & 0.855 & 0.831 & -0.024 & -0.034, -0.011 \\
+SDNET-Wall & 0.826 & 0.823 & -0.003 & -0.015, +0.010 \\
+METU & 0.998 & 0.998 & 0.000 & +0.000, +0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,13 @@
+\begin{table}[htbp]
+\centering
+\caption{Training-time interventions against the baseline on the 144 out-of-domain cells: paired F1 difference (intervention minus baseline) matched by architecture, domain pair and seed, with 95\% bootstrap CI and Cliff's delta.}
+\label{tab:intervenciones}
+\begin{tabular}{lrrrrrr}
+\toprule
+Condition & n pairs & F1 baseline & F1 intervention & Mean diff. & 95\% CI & Cliff's delta \\
+\midrule
+Aggressive augmentation & 144 & 0.632 & 0.627 & -0.005 & -0.024, +0.014 & 0.010 \\
+Histogram equalization & 144 & 0.632 & 0.605 & -0.027 & -0.047, -0.006 & -0.094 \\
+\bottomrule
+\end{tabular}
+\end{table}

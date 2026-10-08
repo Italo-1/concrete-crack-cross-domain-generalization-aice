@@ -1,0 +1,725 @@
+% P1 (AICE) - referencias del manuscrito para AI in Civil Engineering.
+%
+% Estilo de la revista: autor-año APA 7, lista alfabética (JOURNAL.md);
+% plantilla sn-jnl con la opción sn-apa.
+%
+% Procedimiento (guía metodológica §3.3), aplicado a CADA entrada:
+%   paso 1  copiar el DOI
+%   paso 2  abrirlo y comprobar que resuelve y que título, autores, revista,
+%           volumen y páginas coinciden (Crossref; DataCite para arXiv 10.48550
+%           y Mendeley/USU; JSTOR para Holm, que no tiene DOI). Respuestas
+%           crudas guardadas en referencias/nuevas/metadatos/.
+%   paso 3  leer el contenido y comprobar que dice lo que el manuscrito le
+%           atribuye. Cada nota dice QUÉ se leyó (texto completo o resumen) y
+%           QUÉ se le puede atribuir. Lo que no está en la nota no se le
+%           atribuye.
+%
+% Las de Tehnicki glasnik que se conservan llevan su verificación original
+% (21/08-02/09) más la revisión del 02/10. Las retiradas y las descartadas,
+% con el motivo, al final.
+
+% ================================================== AI in Civil Engineering
+
+@article{abeysuriya2026,
+  author  = {Abeysuriya, Kaveesh Guwanindu and Ciupala, Mihaela Anca and Ghorashi, Seyed Ali and Ilki, Alper},
+  title   = {Deep learning for image-based structural element damage assessments in post-earthquake buildings: a systematic review},
+  journal = {AI in Civil Engineering},
+  volume  = {5},
+  pages   = {15},
+  year    = {2026},
+  doi     = {10.1007/s43503-026-00099-5},
+}
+% verificado 02/10. Paso 2: metadatos de la página del artículo (citation_*)
+% y Crossref. Paso 3: TEXTO COMPLETO (referencias/aice/). Revisión PRISMA de
+% 46 estudios (no 47, como decía la guía) sobre daño POST-SISMO en ELEMENTOS
+% de edificios. Se le puede atribuir: "weak evidence of model generalisation to
+% unseen data" (resumen); exactitud alta no implica generalización (§4.1.3);
+% usar transfer learning no prueba generalización (§4.4.2); pide pruebas
+% cross-dataset/cross-event y control de fugas (§4.6.4); fuga cuando los
+% parches salen de la misma imagen madre (final de §4.1.3). Al citarla, nombrar
+% su ámbito. Detalle en referencias/aice/LECTURAS_AICE.md.
+
+@article{luleci2023,
+  author  = {Luleci, Furkan and Necati Catbas, F.},
+  title   = {Condition transfer between prestressed bridges using structural state translation for structural health monitoring},
+  journal = {AI in Civil Engineering},
+  volume  = {2},
+  pages   = {7},
+  year    = {2023},
+  doi     = {10.1007/s43503-023-00016-0},
+}
+% verificado 02/10. Paso 3: TEXTO COMPLETO. Transferencia de estado entre dos
+% puentes pretensados (datos numéricos de aceleración) como generalización de
+% dominio: sin datos del destino en el entrenamiento; destino OOD por covariate
+% shift. Plantea como pregunta abierta qué grado de similitud entre estructuras
+% hace falta para transferir (§5). NO mide asimetría (una sola dirección,
+% puente 1 -> 2) y NO dice que transferir de un dominio complejo a uno simple
+% conserve más información: esa atribución de la guía §6.6 es falsa.
+
+@article{santos2022,
+  author  = {Oliveira Santos, Bruno and Valen{\c c}a, J{\'o}natas and Costeira, Jo{\~a}o P. and Julio, Eduardo},
+  title   = {Domain adversarial training for classification of cracking in images of concrete surfaces},
+  journal = {AI in Civil Engineering},
+  volume  = {1},
+  pages   = {8},
+  year    = {2022},
+  doi     = {10.1007/s43503-022-00008-6},
+}
+% verificado 03/10 (F5; señalado por la revisión adversarial). Paso 2
+% Crossref (metadatos/10.1007_s43503-022-00008-6.json). Paso 3: TEXTO
+% COMPLETO (referencias/aice/s43503-022-00008-6.*). Origen: METU ("CCiC",
+% 458 fotos de 3024x4032, parches de 227x227 según Zhang et al. 2016);
+% destino: 294 parches de la presa de Itaipú, sin etiquetas en el
+% entrenamiento. Se atribuye: los positivos de METU son "mainly close ups"
+% con "Cracks ... centered in the patch" (§3.1); entrenado solo en METU,
+% >99 % en METU y 54 % de exactitud media en Itaipú; con DA-Crack, 84 % en
+% Itaipú (Tabla 1 y §4).
+
+@article{lateef2026,
+  author  = {Lateef, Jamiu and Yu, Xiong},
+  title   = {Novel computer vision algorithm for accurate multi-label classification of concrete bridge defects},
+  journal = {AI in Civil Engineering},
+  volume  = {5},
+  pages   = {10},
+  year    = {2026},
+  doi     = {10.1007/s43503-026-00095-9},
+}
+% verificado 02/10. Paso 3: TEXTO COMPLETO. Multietiqueta sobre CODEBRIM con
+% VGG16/ResNet50/EfficientNetB0; backbone congelado frente a ajuste fino
+% parcial (el ajuste fino gana DENTRO del dominio; no lo comparan fuera);
+% prueba en un conjunto sintético StyleGAN2-ADA derivado de CODEBRIM: todos
+% los modelos caen ("a domain shift between real and synthetic images").
+% Trabajo futuro: "evaluate cross-bridge and cross-site generalization".
+
+@article{fountoukidou2024,
+  author  = {Fountoukidou, Tatiana and Tkachenko, Iuliia and Poli, Benjamin and Miguet, Serge},
+  title   = {Extensible portal frame bridge synthetic dataset for structural semantic segmentation},
+  journal = {AI in Civil Engineering},
+  volume  = {3},
+  pages   = {23},
+  year    = {2024},
+  doi     = {10.1007/s43503-024-00041-7},
+}
+% verificado 02/10. Paso 3: TEXTO COMPLETO. Partición del conjunto sintético a
+% nivel de puente "to avoid bias in the results" (§4.2). Salto sintético->real
+% atribuido en parte a la distancia/encuadre de las tomas (primeros planos
+% frente a vistas generales, §5.3). La guía lo atribuía a "Costa et al.".
+
+@article{hasan2025,
+  author  = {Hasan, Monjurul and Lu, Ming},
+  title   = {Bridging {AI} and explainability in civil engineering: the {Yin-Yang} of predictive power and interpretability},
+  journal = {AI in Civil Engineering},
+  volume  = {4},
+  pages   = {21},
+  year    = {2025},
+  doi     = {10.1007/s43503-025-00066-6},
+}
+% verificado 02/10. Paso 3: TEXTO COMPLETO. Revisión de XAI para gestión de
+% obra. Se le atribuye solo: el conjunto de prueba debe ser representativo de
+% las condiciones reales e independiente del entrenamiento (§3.2.1); en
+% despliegue, seguimiento de deriva y comprobación rápida de la validez de la
+% predicción; responsabilidad profesional del ingeniero (§3.3).
+
+% ============================================ conjuntos de datos usados
+
+@article{dorafshan2018sdnet,
+  author  = {Dorafshan, Sattar and Thomas, Robert J. and Maguire, Marc},
+  title   = {{SDNET2018}: An annotated image dataset for non-contact concrete crack detection using deep convolutional neural networks},
+  journal = {Data in Brief},
+  volume  = {21},
+  pages   = {1664--1668},
+  year    = {2018},
+  doi     = {10.1016/j.dib.2018.11.015},
+}
+% verificado 01/09 (Crossref) y 02/10. Paso 3: TEXTO COMPLETO (Europe PMC,
+% PMC6247444). Más de 56 000 imágenes de tableros, muros y pavimentos; grietas
+% de 0.06 a 25 mm; obstrucciones (sombras, rugosidad, bordes, huecos). Cámara
+% de 16 MP a 500 mm, fotos de 4068x3456 px CORTADAS en parches de 256x256
+% (~60x60 mm cada uno). Referencia AlexNet DENTRO del conjunto: 87.5-95.5 % de
+% exactitud según subconjunto y modo (Tabla 2). Es la cita correcta para "cifras
+% dentro de SDNET2018" (la versión anterior se las atribuía, por error, a
+% dorafshan2018comparison).
+
+@misc{maguire2018sdnetdata,
+  author       = {Maguire, Marc and Dorafshan, Sattar and Thomas, Robert J.},
+  title        = {{SDNET2018}: A concrete crack image dataset for machine learning applications},
+  howpublished = {Utah State University [Data set]},
+  year         = {2018},
+  doi          = {10.15142/T3TD19},
+  url          = {https://doi.org/10.15142/T3TD19},
+}
+% verificado 02/10 contra DataCite: título, tres creadores, Utah State
+% University, 2018. Es el DOI del CONJUNTO (citado así en el propio artículo de
+% datos). Lo pide la política de datos de AICE: citar los datos con
+% identificador persistente en formato DataCite. Nueva respecto a la versión
+% anterior.
+
+@misc{ozgenel2019metu,
+  author       = {{\"O}zgenel, {\c C}a{\u g}lar F{\i}rat},
+  title        = {Concrete crack images for classification},
+  howpublished = {Mendeley Data, V2 [Data set]},
+  year         = {2019},
+  doi          = {10.17632/5y9wdsg2zt.2},
+  url          = {https://doi.org/10.17632/5y9wdsg2zt.2},
+}
+% verificado 01/09 y de nuevo 02/10 contra DataCite: título, creador Özgenel,
+% Mendeley, 2019. Fuente exacta de la que se descargó el dominio METU. Es el
+% mismo conjunto que Rashid et al. (2025) llaman "surface crack detection
+% (SCD)": 40 000 imágenes de 227x227 en Positive/Negative.
+
+@inproceedings{ozgenel2018,
+  author    = {{\"O}zgenel, {\c C}a{\u g}lar F{\i}rat and G{\"o}nen{\c c} Sorgu{\c c}, Ayd{\i}n},
+  title     = {Performance comparison of pretrained convolutional neural networks on crack detection in buildings},
+  booktitle = {{Proceedings of the 35th International Symposium on Automation and Robotics in Construction (ISARC)}},
+  year      = {2018},
+  doi       = {10.22260/ISARC2018/0094},
+  url          = {https://doi.org/10.22260/ISARC2018/0094},
+}
+% verificado 02/09 (Crossref + TEXTO COMPLETO, iaarc.org ISARC2018-Paper154).
+% Siete redes preentrenadas; 40K parches de 224x224 de 500 fotos de muros y
+% suelos del campus de METU a ~1 m, cámara perpendicular, "captured on the same
+% day with similar illumination conditions"; ResNet101/152 dan 0.99 en el caso
+% REVERIFICADO 03/10 (F5) sobre el PDF (referencias/nuevas/ozgenel2018.*):
+% los tres casos externos son Test2 pavimentos de HORMIGÓN, Test3 OTROS
+% EDIFICIOS DE HORMIGÓN y Test4 edificios de LADRILLO (250+250 cada uno, 50
+% fotos de edificios y lugares distintos). Tabla 4, exactitud MÁXIMA sobre
+% tamaños de entrenamiento y épocas: VGG16 0.97/0.98/0.96, VGG19
+% 0.98/0.96/0.88, GoogLeNet 0.98/0.92/0.90, ResNet101 0.77/0.74/0.72,
+% ResNet152 0.62/0.54/0.62. Efecto de arquitectura fuerte, no solo de
+% profundidad. Ojo: la ficha de Mendeley habla de 458 fotos de 4032x3024 y
+% parches de 227x227; este artículo, de 500 fotos y parches de 224x224.
+% retenido y por debajo de 0.80 en pavimentos, que los autores leen como
+% sobreajuste de las redes más profundas.
+
+% ============================== detección de grietas: dentro y entre conjuntos
+
+@article{cha2017,
+  author  = {Cha, Young-Jin and Choi, Wooram and B{\"u}y{\"u}k{\"o}zt{\"u}rk, Oral},
+  title   = {Deep learning-based crack damage detection using convolutional neural networks},
+  journal = {Computer-Aided Civil and Infrastructure Engineering},
+  volume  = {32},
+  number  = {5},
+  pages   = {361--378},
+  year    = {2017},
+  doi     = {10.1111/mice.12263},
+}
+% verificado 01/09 (Crossref). Paso 3 rehecho 02/10 sobre el RESUMEN (Semantic
+% Scholar; el PDF de Wiley devuelve 403): CNN entrenada con 40K imágenes de
+% 256x256, ~98 % de exactitud; ADEMÁS se prueba en 55 imágenes de 5888x3584 de
+% OTRA estructura no usada en entrenamiento ni validación, con luz intensa,
+% sombras y grietas finas. CORRECCIÓN: la versión anterior la contaba entre los
+% trabajos que "solo evalúan en imágenes retenidas de su propia colección";
+% eso es falso para Cha et al. Sí se puede decir que no construyen una matriz ni
+% invierten la dirección.
+
+@article{dorafshan2018comparison,
+  author  = {Dorafshan, Sattar and Thomas, Robert J. and Maguire, Marc},
+  title   = {Comparison of deep convolutional neural networks and edge detectors for image-based crack detection in concrete},
+  journal = {Construction and Building Materials},
+  volume  = {186},
+  pages   = {1031--1045},
+  year    = {2018},
+  doi     = {10.1016/j.conbuildmat.2018.08.011},
+}
+% verificado 01/09 (Crossref). Paso 3 rehecho 02/10 sobre el RESUMEN (Semantic
+% Scholar; el PDF del repositorio UND devuelve 403): 19 imágenes de alta
+% definición, 3420 parches (319 con grieta); seis detectores de bordes frente a
+% AlexNet en tres modos; la DCNN etiqueta con 99 % de exactitud; en modo
+% transfer learning detecta ~86 % de las imágenes con grieta y grietas de hasta
+% 0.04 mm. CORRECCIÓN: NO usa SDNET2018. La versión anterior le atribuía
+% "comparable within-dataset figures on SDNET2018"; para eso, dorafshan2018sdnet.
+
+@article{alipour2019,
+  author  = {Alipour, Mohamad and Harris, Devin K. and Miller, Gregory R.},
+  title   = {Robust pixel-level crack detection using deep fully convolutional neural networks},
+  journal = {Journal of Computing in Civil Engineering},
+  volume  = {33},
+  number  = {6},
+  pages   = {04019040},
+  year    = {2019},
+  doi     = {10.1061/(ASCE)CP.1943-5487.0000854},
+}
+% verificado 01/09 (Crossref). Paso 3 02/10: solo el INICIO del resumen
+% (Semantic Scholar; ascelibrary.org tras control anti-bots): redes totalmente
+% convolucionales para detección de defectos a nivel de PÍXEL en
+% infraestructura de hormigón, frente a la detección por parche. Se le atribuye
+% solo eso (delimitar que este artículo es clasificación de parche). Número de
+% artículo 04019040 comprobado en el registro Crossref (campo article-number).
+
+@article{rashid2025,
+  author  = {Rashid, Taha and Mokji, Musa Mohd and Rasheed, Mohammed},
+  title   = {Cross-dataset evaluation of deep learning models for crack classification in structural surfaces},
+  journal = {Journal of the Mechanical Behavior of Materials},
+  volume  = {34},
+  number  = {1},
+  pages   = {20250074},
+  year    = {2025},
+  doi     = {10.1515/jmbm-2025-0074},
+}
+% verificado 02/10. Paso 2 Crossref. Paso 3: TEXTO COMPLETO (De Gruyter, acceso
+% abierto, leído en el navegador). PRECEDENTE MÁS DIRECTO: matriz 6x6 de
+% "self-testing" y "cross-testing" con CNN, ResNet50, LSTM y VGG16 sobre
+% SDNET2018 (como UN conjunto, D/P/W juntos), SCD (= METU), CPC, CDIBM, CCI y
+% HBC; precisión, recall y F1. Diferencias con este trabajo: una sola
+% ejecución sin semillas ni pruebas estadísticas (§4.5: "single-run
+% experiments"); SDNET2018 sin separar por superficie; sin igualar prior de
+% clase ni tamaño; ResNet50 y VGG16 con backbone CONGELADO (§4.3). Concluyen
+% que el aumento básico no basta contra el cambio de dominio y proponen
+% entrenamiento multi-fuente como trabajo futuro (§6). Sus tablas 7 y 9 dan,
+% para VGG16, F1 82 en SDNET->SCD y 61 en SCD->SDNET (misma dirección que la
+% asimetría de este trabajo; definición de F1 no explícita, los valores
+% parecen promedio macro).
+
+@incollection{zhu2026concracknet,
+  author    = {Zhu, Taoyuan and Zi, Xing and Braytee, Ali and Tao, Xian and Li, Jun and Pratama, Mahardhika and Pinto Moreira, Catarina and Prasad, Mukesh},
+  title     = {{ConCrackNet}: {CLIP}-driven pseudo-label domain adaptation for concrete crack classification},
+  booktitle = {{Machine Learning and Knowledge Engineering for Decision Making}},
+  series    = {Lecture Notes in Computer Science},
+  pages     = {440--454},
+  publisher = {Springer},
+  year      = {2026},
+  doi       = {10.1007/978-981-92-2487-6_27},
+  url          = {https://doi.org/10.1007/978-981-92-2487-6\_27},
+}
+% verificado 02/10. Paso 2 Crossref (capítulo LNCS, 8 autores, pp. 440-454).
+% Paso 3: RESUMEN en la página del DOI (Springer). Adaptación de dominio con
+% pseudoetiquetas de CLIP entre subconjuntos de SDNET2018: >95 % de exactitud en
+% SEIS escenarios cruzados (los pares entre superficies de este trabajo).
+% Se atribuye: los subconjuntos de SDNET2018 ya se usan como dominios; la
+% adaptación usa datos (sin etiquetar) del destino, a diferencia de este diseño.
+
+@article{chun2024,
+  author  = {Chun, Pang-jo and Kikuta, Toshiya},
+  title   = {Self-training with {Bayesian} neural networks and spatial priors for unsupervised domain adaptation in crack segmentation},
+  journal = {Computer-Aided Civil and Infrastructure Engineering},
+  volume  = {39},
+  number  = {17},
+  pages   = {2642--2661},
+  year    = {2024},
+  doi     = {10.1111/mice.13315},
+}
+% verificado 02/10. Paso 2 Crossref. Paso 3: RESUMEN (Semantic Scholar;
+% artículo CC BY). Adaptación de dominio no supervisada para segmentar grietas
+% en muros de hormigón; mejora de F1 de 0.06-0.15 tras adaptar; "high-precision
+% crack segmentation with as few as 100 target images, which can be easily
+% obtained at the site". Se atribuye: la adaptación necesita imágenes del
+% sitio destino, del orden de cien.
+
+@article{yang2020crack500,
+  author  = {Yang, Fan and Zhang, Lei and Yu, Sijia and Prokhorov, Danil and Mei, Xue and Ling, Haibin},
+  title   = {Feature pyramid and hierarchical boosting network for pavement crack detection},
+  journal = {IEEE Transactions on Intelligent Transportation Systems},
+  volume  = {21},
+  number  = {4},
+  pages   = {1525--1535},
+  year    = {2020},
+  doi     = {10.1109/TITS.2019.2910595},
+}
+% verificado 02/10. Paso 2 Crossref. Paso 3: TEXTO COMPLETO (arXiv 1901.06340).
+% Presenta CRACK500: 500 imágenes de pavimento de ~2000x1500 px tomadas con
+% teléfono en el campus de Temple University, con máscara binaria por píxel. Se
+% cita solo en trabajo futuro (candidato a tercer dominio, PLAN_AICE §5.3).
+
+@article{spencer2019,
+  author  = {Spencer, Billie F. and Hoskere, Vedhus and Narazaki, Yasutaka},
+  title   = {Advances in computer vision-based civil infrastructure inspection and monitoring},
+  journal = {Engineering},
+  volume  = {5},
+  number  = {2},
+  pages   = {199--222},
+  year    = {2019},
+  doi     = {10.1016/j.eng.2018.11.030},
+}
+% verificado 02/10. Paso 2 Crossref. Paso 3: RESUMEN (Semantic Scholar;
+% artículo de acceso abierto). Revisión de visión por computador para
+% inspección y monitorización: el objetivo es convertir imagen o vídeo en
+% información accionable de forma automática y robusta; clasifica inspección
+% (componentes, daño visible local y global, cambios) y monitorización. Se
+% atribuye solo el encuadre de la introducción.
+
+% =========================== sesgo de conjunto, cambio de dominio y atajos
+
+@inproceedings{torralba2011,
+  author    = {Torralba, Antonio and Efros, Alexei A.},
+  title     = {Unbiased look at dataset bias},
+  booktitle = {{Proceedings of the 2011 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}},
+  pages     = {1521--1528},
+  year      = {2011},
+  doi       = {10.1109/CVPR.2011.5995347},
+  url          = {https://doi.org/10.1109/CVPR.2011.5995347},
+}
+% verificado 01/09 (Crossref) y 02/10. Paso 3: TEXTO COMPLETO (PDF de los
+% autores, csail.mit.edu). "Name That Dataset" (la colección es reconocible
+% por las imágenes) y Tabla 1: matriz de entrenar en un conjunto y probar en
+% todos, con columnas "Self", "Mean others" y "Percent drop". Es el diseño que
+% este artículo aplica a superficies de hormigón.
+
+@article{wang2018,
+  author  = {Wang, Mei and Deng, Weihong},
+  title   = {Deep visual domain adaptation: A survey},
+  journal = {Neurocomputing},
+  volume  = {312},
+  pages   = {135--153},
+  year    = {2018},
+  doi     = {10.1016/j.neucom.2018.05.083},
+}
+% verificado 01/09 (Crossref) y 02/10 sobre el RESUMEN (Semantic Scholar;
+% arXiv 1802.03601): revisión de adaptación de dominio profunda; taxonomía de
+% escenarios y de métodos por función de pérdida. Se atribuye: familia de
+% métodos que alinean dominios y requieren datos del destino.
+
+@article{zhou2023dg,
+  author  = {Zhou, Kaiyang and Liu, Ziwei and Qiao, Yu and Xiang, Tao and Loy, Chen Change},
+  title   = {Domain generalization: A survey},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume  = {45},
+  number  = {4},
+  pages   = {4396--4415},
+  year    = {2023},
+  doi     = {10.1109/TPAMI.2022.3195549},
+}
+% verificado 02/10. Paso 2: Crossref conserva el registro de "early access"
+% (2022, pp. 1-20); volumen, número y páginas definitivos comprobados en IEEE
+% Xplore (vol. 45, n.º 4, pp. 4396-4415; publicación en línea 01/08/2022).
+% Paso 3: TEXTO COMPLETO (arXiv 2103.02503v7). Se atribuye: DG = generalizar
+% con solo datos de origen, sin acceso al destino (§1); la evaluación sigue la
+% regla "leave-one-domain-out", con DG de una o varias fuentes (§2.4);
+% selección de modelo con validación en los dominios de entrenamiento (§2.4).
+
+@misc{gulrajani2021,
+  author       = {Gulrajani, Ishaan and Lopez-Paz, David},
+  title        = {In search of lost domain generalization},
+  howpublished = {arXiv:2007.01434},
+  year         = {2020},
+  doi          = {10.48550/arXiv.2007.01434},
+  url          = {https://doi.org/10.48550/arXiv.2007.01434},
+}
+% verificado 02/10. Paso 2 DataCite (arXiv, 2020). Paso 3: TEXTO COMPLETO
+% (resumen e introducción). Se atribuye: con implementación cuidadosa,
+% minimización de riesgo empírico (entrenamiento estándar) iguala a los
+% algoritmos específicos de DG en siete conjuntos (DomainBed); la selección de
+% modelo forma parte del método. Se cita como arXiv (no se comprobó la versión
+% de congreso).
+
+@article{geirhos2020,
+  author  = {Geirhos, Robert and Jacobsen, J{\"o}rn-Henrik and Michaelis, Claudio and Zemel, Richard and Brendel, Wieland and Bethge, Matthias and Wichmann, Felix A.},
+  title   = {Shortcut learning in deep neural networks},
+  journal = {Nature Machine Intelligence},
+  volume  = {2},
+  number  = {11},
+  pages   = {665--673},
+  year    = {2020},
+  doi     = {10.1038/s42256-020-00257-z},
+}
+% verificado 02/10. Paso 2 Crossref. Paso 3: TEXTO COMPLETO (preprint
+% arXiv 2004.07780v5, que remite a esta versión publicada). Atajos = reglas de
+% decisión que funcionan en pruebas i.i.d. y fallan fuera de distribución.
+% Ejemplos: clasificador de neumonía que funciona en unos hospitales y falla en
+% hospitales nuevos por reconocer el hospital; ejemplo de juguete en que una
+% regla que cuenta píxeles blancos (tamaño del objeto) resuelve el test i.i.d. y
+% queda invalidada por un test con tamaño aleatorizado (§3). Recomendación:
+% evaluar fuera de distribución (§6.1). Sostiene la lectura "protocolo de
+% recorte" de la asimetría como hipótesis, no como hecho.
+
+@misc{kumar2022,
+  author       = {Kumar, Ananya and Raghunathan, Aditi and Jones, Robbie and Ma, Tengyu and Liang, Percy},
+  title        = {Fine-tuning can distort pretrained features and underperform out-of-distribution},
+  howpublished = {International Conference on Learning Representations (ICLR); arXiv:2202.10054},
+  year         = {2022},
+  doi          = {10.48550/arXiv.2202.10054},
+  url          = {https://doi.org/10.48550/arXiv.2202.10054},
+}
+% verificado 02/10. Paso 2 DataCite; publicación oral en ICLR 2022 comprobada
+% en iclr.cc/virtual/2022/oral/5946. Paso 3: TEXTO COMPLETO (resumen,
+% introducción). En 10 conjuntos con cambio de distribución, el ajuste fino
+% gana ~2 % de exactitud dentro de distribución y pierde ~7 % fuera frente a la
+% sonda lineal, cuando las características preentrenadas son buenas y el
+% cambio es grande; con características flojas o dominios muy cercanos el
+% ajuste fino puede ganar también fuera; LP-FT combina ambas. Es la hipótesis
+% H-EXP3.
+
+@inproceedings{kornblith2019,
+  author    = {Kornblith, Simon and Shlens, Jonathon and Le, Quoc V.},
+  title     = {Do better {ImageNet} models transfer better?},
+  booktitle = {{Proceedings of the 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}},
+  pages     = {2656--2666},
+  year      = {2019},
+  doi       = {10.1109/CVPR.2019.00277},
+  url          = {https://doi.org/10.1109/CVPR.2019.00277},
+}
+% verificado 02/10. Paso 2 Crossref. Paso 3: TEXTO COMPLETO (arXiv 1805.08974,
+% resumen y Fig. 1). 16 redes en 12 conjuntos con dos regímenes: extractor fijo
+% + regresión logística, y ajuste fino. Se atribuye: son los dos regímenes
+% estándar de transferencia que compara EXP3.
+
+% ===================================== fugas, varianza y estadística
+
+@article{kapoor2023,
+  author  = {Kapoor, Sayash and Narayanan, Arvind},
+  title   = {Leakage and the reproducibility crisis in machine-learning-based science},
+  journal = {Patterns},
+  volume  = {4},
+  number  = {9},
+  pages   = {100804},
+  year    = {2023},
+  doi     = {10.1016/j.patter.2023.100804},
+}
+% verificado 02/10. Paso 2 Crossref. Paso 3: TEXTO COMPLETO (Europe PMC,
+% PMC10499856; cell.com bloquea con desafío anti-bots). Taxonomía de ocho
+% tipos de fuga; [L1.4] duplicados entre train y test; [L3.2] "Nonindependence
+% between training and test samples", incluido el caso de muestras de las
+% mismas personas o unidades en train y test. Sostiene llamar "fuga" a los
+% parches de una misma foto repartidos entre train y test.
+
+@misc{bouthillier2021,
+  author       = {Bouthillier, Xavier and Delaunay, Pierre and Bronzi, Mirko and Trofimov, Assya and Nichyporuk, Brennan and Szeto, Justin and Sepah, Naz and Raff, Edward and Madan, Kanika and Voleti, Vikram and Kahou, Samira Ebrahimi and Michalski, Vincent and Serdyuk, Dmitriy and Arbel, Tal and Pal, Chris and Varoquaux, Ga{\"e}l and Vincent, Pascal},
+  title        = {Accounting for variance in machine learning benchmarks},
+  howpublished = {Proceedings of Machine Learning and Systems 3 (MLSys 2021); arXiv:2103.03098},
+  year         = {2021},
+  doi          = {10.48550/arXiv.2103.03098},
+  url          = {https://doi.org/10.48550/arXiv.2103.03098},
+}
+% verificado 02/10. Paso 2 DataCite. Paso 3: TEXTO COMPLETO (resumen e
+% introducción). La varianza por muestreo de datos, inicialización e
+% hiperparámetros cambia de forma marcada las comparaciones; muestrear solo
+% inicializaciones deja fuera fuentes de variación mayores. Sostiene la
+% limitación de que el submuestreo y la partición se sortearon una vez.
+% Publicación en Proceedings of MLSys 3 (2021) comprobada el 02/10 en
+% proceedings.mlsys.org y mlsys.org/virtual/2021/oral/1628.
+
+@article{welch1947,
+  author  = {Welch, B. L.},
+  title   = {The generalization of `{Student's}' problem when several different population variances are involved},
+  journal = {Biometrika},
+  volume  = {34},
+  number  = {1--2},
+  pages   = {28--35},
+  year    = {1947},
+  doi     = {10.1093/biomet/34.1-2.28},
+}
+% verificado 02/10. Paso 2 Crossref (el registro trae la errata "VARLANCES" en
+% el título; se corrige). Se cita solo como origen de la prueba t con
+% varianzas distintas usada en el análisis.
+
+@article{holm1979,
+  author  = {Holm, Sture},
+  title   = {A simple sequentially rejective multiple test procedure},
+  journal = {Scandinavian Journal of Statistics},
+  volume  = {6},
+  number  = {2},
+  pages   = {65--70},
+  year    = {1979},
+  url     = {https://www.jstor.org/stable/4615733},
+}
+% verificado 02/10. SIN DOI: comprobado en JSTOR (stable/4615733): título,
+% autor, Scand. J. Stat. 6(2):65-70, 1979; resumen leído (procedimiento
+% secuencialmente rechazante con control del error de tipo I). Se cita solo
+% como origen de la corrección de Holm.
+
+@article{cliff1993,
+  author  = {Cliff, Norman},
+  title   = {Dominance statistics: Ordinal analyses to answer ordinal questions},
+  journal = {Psychological Bulletin},
+  volume  = {114},
+  number  = {3},
+  pages   = {494--509},
+  year    = {1993},
+  doi     = {10.1037/0033-2909.114.3.494},
+}
+% verificado 02/10. Paso 2 Crossref. Se cita solo como origen del tamaño del
+% efecto delta de Cliff.
+
+% ===================================================== arquitecturas
+
+@inproceedings{he2016,
+  author    = {He, Kaiming and Zhang, Xiangyu and Ren, Shaoqing and Sun, Jian},
+  title     = {Deep residual learning for image recognition},
+  booktitle = {{Proceedings of the 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}},
+  pages     = {770--778},
+  year      = {2016},
+  doi       = {10.1109/CVPR.2016.90},
+  url          = {https://doi.org/10.1109/CVPR.2016.90},
+}
+% verificado 01/09 (Crossref). Solo nombra la arquitectura ResNet.
+
+@inproceedings{howard2019,
+  author    = {Howard, Andrew and Sandler, Mark and Chu, Grace and Chen, Liang-Chieh and Chen, Bo and Tan, Mingxing and Wang, Weijun and Zhu, Yukun and Pang, Ruoming and Vasudevan, Vijay and Le, Quoc V. and Adam, Hartwig},
+  title     = {Searching for {MobileNetV3}},
+  booktitle = {{Proceedings of the 2019 IEEE/CVF International Conference on Computer Vision (ICCV)}},
+  pages     = {1314--1324},
+  year      = {2019},
+  doi       = {10.1109/ICCV.2019.00140},
+  url          = {https://doi.org/10.1109/ICCV.2019.00140},
+}
+% verificado 01/09 (Crossref). Solo nombra la arquitectura MobileNetV3.
+
+@inproceedings{tan2019,
+  author    = {Tan, Mingxing and Le, Quoc},
+  title     = {{EfficientNet}: Rethinking model scaling for convolutional neural networks},
+  booktitle = {{Proceedings of the 36th International Conference on Machine Learning (ICML)}},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {97},
+  pages     = {6105--6114},
+  year      = {2019},
+  url       = {https://proceedings.mlr.press/v97/tan19a.html},
+}
+% verificado 02/09 (DataCite, arXiv:1905.11946) y 03/10 la versión publicada
+% en la página de PMLR (vol. 97, pp. 6105-6114; editores Chaudhuri y
+% Salakhutdinov). Sin DOI. Solo nombra la arquitectura EfficientNet-B0.
+% Gulrajani (ICLR 2021) y Steiner (TMLR 2022) siguen citados como arXiv: el
+% 03/10 OpenReview y DBLP pidieron verificación anti-bots y no se abrió la
+% versión publicada.
+
+% ---- Añadidas tras la ronda 2 de revisión (03/10), métricas y umbral ----
+
+@incollection{lipton2014,
+  author    = {Lipton, Zachary C. and Elkan, Charles and Naryanaswamy, Balakrishnan},
+  title     = {Optimal thresholding of classifiers to maximize {F1} measure},
+  booktitle = {{Machine Learning and Knowledge Discovery in Databases}},
+  series    = {Lecture Notes in Computer Science},
+  pages     = {225--239},
+  publisher = {Springer},
+  year      = {2014},
+  doi       = {10.1007/978-3-662-44851-9_15},
+  url       = {https://doi.org/10.1007/978-3-662-44851-9\_15},
+}
+% verificado 03/10. Paso 2 Crossref (capítulo LNCS, ECML PKDD 2014, pp.
+% 225-239; metadatos/10.1007_978-3-662-44851-9_15.json). Paso 3: TEXTO
+% COMPLETO de la versión arXiv:1402.1892v2 (mismo trabajo, título "Thresholding
+% classifiers to maximize F1 score"; nuevas/lipton2014_arxiv1402.1892.*). Se
+% atribuye: (a) Teorema 3: con un clasificador no informativo, el umbral que
+% maximiza F1 predice positivo en todos los ejemplos, sea cual sea la tasa base;
+% (b) sección 7: elegir el umbral maximizando F1 en una muestra pequeña sufre
+% una "winner's curse" (sobreajuste del umbral).
+
+@article{chicco2020,
+  author  = {Chicco, Davide and Jurman, Giuseppe},
+  title   = {The advantages of the {Matthews} correlation coefficient ({MCC}) over {F1} score and accuracy in binary classification evaluation},
+  journal = {BMC Genomics},
+  volume  = {21},
+  pages   = {6},
+  year    = {2020},
+  doi     = {10.1186/s12864-019-6413-7},
+}
+% verificado 03/10. Paso 2 Crossref (vol. 21, art. 6). Paso 3: TEXTO COMPLETO
+% (Europe PMC, PMC6941312; nuevas/chicco2020_s12864-019-6413-7.txt). Se
+% atribuye: el MCC solo es alto si la predicción es buena en las cuatro
+% categorías de la matriz de confusión; el F1 no depende de los negativos bien
+% clasificados y cambia al intercambiar la clase positiva.
+
+@inproceedings{miller2021,
+  author    = {Miller, John P. and Taori, Rohan and Raghunathan, Aditi and Sagawa, Shiori and Koh, Pang Wei and Shankar, Vaishaal and Liang, Percy and Carmon, Yair and Schmidt, Ludwig},
+  title     = {Accuracy on the line: On the strong correlation between out-of-distribution and in-distribution generalization},
+  booktitle = {{Proceedings of the 38th International Conference on Machine Learning (ICML)}},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {139},
+  pages     = {7721--7735},
+  year      = {2021},
+  url       = {https://proceedings.mlr.press/v139/miller21b.html},
+}
+% verificado 03/10. Página de PMLR (vol. 139, pp. 7721-7735; nueve autores;
+% metadatos/pmlr-v139-miller21b.html). Sin DOI. TEXTO COMPLETO arXiv:2107.04649v2
+% (nuevas/miller2021_arxiv2107.04649.*). Se atribuye: entre MODELOS (arquitecturas,
+% hiperparámetros, tamaño de entrenamiento) evaluados en un mismo cambio de
+% distribución, la exactitud fuera de distribución está fuertemente
+% correlacionada con la exactitud dentro; hay excepciones (CIFAR-10-C
+% sintéticos, Camelyon17-WILDS). NO trata la correlación entre FUENTES
+% distintas, que es la hipótesis de este artículo: se cita como contraste.
+
+@misc{loshchilov2019,
+  author       = {Loshchilov, Ilya and Hutter, Frank},
+  title        = {Decoupled weight decay regularization},
+  howpublished = {arXiv:1711.05101},
+  year         = {2017},
+  doi          = {10.48550/arXiv.1711.05101},
+  url          = {https://doi.org/10.48550/arXiv.1711.05101},
+}
+% verificado 03/10. DataCite (metadatos/10.48550_arXiv.1711.05101.json).
+% TEXTO COMPLETO de arXiv (v3, "Published as a conference paper at ICLR 2019";
+% nuevas/loshchilov2019_arxiv1711.05101.*). Se cita como arXiv: OpenReview
+% pidió verificación anti-bots. Se atribuye solo el optimizador AdamW
+% (decaimiento de pesos desacoplado de la actualización del gradiente).
+% Youden (1950), índice J: Crossref verificado, pero Wiley dio 403 y
+% verificación anti-bots; no se leyó y NO se cita (el texto define el índice).
+
+@misc{dosovitskiy2021,
+  author       = {Dosovitskiy, Alexey and Beyer, Lucas and Kolesnikov, Alexander and Weissenborn, Dirk and Zhai, Xiaohua and Unterthiner, Thomas and Dehghani, Mostafa and Minderer, Matthias and Heigold, Georg and Gelly, Sylvain and Uszkoreit, Jakob and Houlsby, Neil},
+  title        = {An image is worth 16x16 words: Transformers for image recognition at scale},
+  howpublished = {International Conference on Learning Representations (ICLR); arXiv:2010.11929},
+  year         = {2021},
+  doi          = {10.48550/arXiv.2010.11929},
+  url          = {https://doi.org/10.48550/arXiv.2010.11929},
+}
+% verificado 02/09 (DataCite; el preprint es de 2020, se cita el año de ICLR).
+% Publicación oral en ICLR 2021 comprobada el 02/10 (iclr.cc/virtual/2021/oral/3458).
+% NO define la variante Tiny: por eso va siempre con steiner2021.
+
+@misc{steiner2021,
+  author       = {Steiner, Andreas and Kolesnikov, Alexander and Zhai, Xiaohua and Wightman, Ross and Uszkoreit, Jakob and Beyer, Lucas},
+  title        = {How to train your {ViT}? {Data}, augmentation, and regularization in vision transformers},
+  howpublished = {arXiv:2106.10270},
+  year         = {2021},
+  doi          = {10.48550/arXiv.2106.10270},
+  url          = {https://doi.org/10.48550/arXiv.2106.10270},
+}
+% verificado 02/09 (DataCite). Origen de los pesos AugReg que timm sirve para
+% vit_tiny_patch16_224 (etiqueta augreg_in21k_ft_in1k, comprobada en la caché
+% local el 02/10).
+
+% ============================== Tehnicki glasnik que se conservan (opcionales)
+% DECISION F3 (03/10): no se citan. La introduccion de AICE abre con el caso
+% de la agencia (guia 6.2) y no con la capacidad portante; bibtex no las
+% imprime. Se dejan aqui solo como registro de la verificacion.
+
+@article{kos2020,
+  author  = {Kos, {\v Z}eljko and Klymenko, Yevgen and Polianskyi, Kostiantyn and Crnoja, Adrijana},
+  title   = {Research of the residual bearing capacity and the work of damaged reinforced concrete beams' inclined sections},
+  journal = {Tehni{\v c}ki glasnik},
+  volume  = {14},
+  number  = {4},
+  pages   = {466--472},
+  year    = {2020},
+  doi     = {10.31803/tg-20191125075359},
+}
+% verificado 21/08 y leído 25/08 (resumen extendido de Hrčak). La capacidad
+% portante de secciones inclinadas de vigas dañadas cae al crecer el área
+% dañada en la zona comprimida. Motivación de ingeniería en la introducción;
+% NO es una referencia de detección por imagen. Se conserva si la introducción
+% la necesita; decisión en F3.
+
+@article{drapaluk2019,
+  author  = {Drapaluk, Marina},
+  title   = {Influence of reinforced concrete forming features on mechanical characteristics},
+  journal = {Tehni{\v c}ki glasnik},
+  volume  = {13},
+  number  = {2},
+  pages   = {86--91},
+  year    = {2019},
+  doi     = {10.31803/tg-20180310210604},
+}
+% verificado 21/08 y leído 25/08 (resumen extendido de Hrčak). El moldeado
+% influye en las propiedades mecánicas del hormigón armado. Apoyo débil a
+% tratar las superficies como dominios distintos; candidata a retirar en F3.
+
+% ------------------------------------------------------------------- notas
+%
+% RETIRADAS respecto a la versión de Tehnicki glasnik (02/10): estaban para
+% cumplir el mínimo de citas de aquella revista y no aportan a este artículo.
+%   kolar2023     CNN sobre señales de VIBRACIÓN de maquinaria rotativa.
+%   svalina2023   visión por computador para aceptabilidad dimensional de piezas.
+%   mundar2025    CNN sobre imágenes de chispas de esmerilado (carbono en acero).
+%
+% DESCARTADAS de las candidatas AICE de la guía (ver LECTURAS_AICE.md):
+%   C3 Luleci & Catbas 2023 (art. 9), C5 Bazrafshan et al. 2025, C6 Zhao 2022.
+%
+% NO CITADAS por no poder completar el paso 3 (02/10):
+%   Weng et al. (2023), "Unsupervised domain adaptation for crack detection",
+%     Autom. Constr. 153:104939, doi:10.1016/j.autcon.2023.104939. Paso 2 OK
+%     (Crossref); ScienceDirect pide CAPTCHA y ninguna fuente abierta da el
+%     resumen. Si el usuario lo abre a mano, se puede añadir.
+%   Phares et al. (2004), "Routine highway bridge inspection condition
+%     documentation accuracy and reliability", J. Bridge Eng. 9(4):403,
+%     doi:10.1061/(ASCE)1084-0702(2004)9:4(403). ascelibrary bloquea; sin
+%     resumen abierto.
+%   Zhang et al. (2025), arXiv:2508.10256, revisión de detección de grietas:
+%     leída, pero es un preprint sin revisión y trata casi solo segmentación.

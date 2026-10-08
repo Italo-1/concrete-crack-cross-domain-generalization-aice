@@ -1,0 +1,40 @@
+# Pesos de los modelos (1 GB): van a Zenodo, no a GitHub.
+checkpoints/
+
+# Datos: las colecciones son públicas y se descargan con src/01_download.py.
+# Se publica solo la lista de parches y particiones (data/processed/manifiesto_agrupado.*).
+data/processed/caracteristicas/
+data/raw/
+
+# PDFs y textos completos de trabajos citados: tienen derechos de autor.
+referencias/
+
+# Documentos internos de trabajo. PLAN_AICE.md contiene los nombres de los
+# autores, que no se publican hasta decidir la autoría.
+PLAN_AICE.md
+PROMPT_INICIO.md
+
+# Plantilla de Springer y capturas de la web de la revista (no son del proyecto).
+paper/template/
+paper/evidencia/
+
+# Pruebas cortas de humo (no entran en el artículo).
+results/smoke/
+results/smoke_escala/
+results/smoke_multifuente/
+results/smoke_sonda/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Registros y auxiliares de LaTeX
+results/logs/*.log
+paper/*.aux
+paper/*.log
+paper/*.bbl
+paper/*.blg
+paper/*.out
+paper/*.synctex.gz
+paper/*.toc

@@ -1,0 +1,5 @@
+Architecture,Family,Parameters (M),Probe feature dim.,timm weights,Input,Batch,Reference
+ResNet-18,"CNN, residual",11.18,512,resnet18.a1_in1k,224 x 224,64,He et al. (2016)
+EfficientNet-B0,"CNN, compound-scaled",4.01,1280,efficientnet_b0.ra_in1k,224 x 224,64,Tan and Le (2019)
+MobileNetV3-Small,"CNN, mobile search",1.52,1024,mobilenetv3_small_100.lamb_in1k,224 x 224,64,Howard et al. (2019)
+ViT-Tiny/16,Vision transformer,5.52,192,vit_tiny_patch16_224.augreg_in21k_ft_in1k,224 x 224,64,Dosovitskiy et al. (2021); Steiner et al. (2021)

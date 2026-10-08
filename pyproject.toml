@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fieutils"
+version = "0.1.0"
+description = "Infraestructura comun de la linea B - 5 articulos FIE-ESPOCH 2026"
+requires-python = ">=3.11"
+
+# Instalar en modo editable desde C:\lineaB:
+#     .venv\Scripts\pip install -e .
+#
+# Sin esto, `from fieutils.signal_repr import ...` falla al ejecutar los scripts
+# desde la carpeta de un articulo, porque C:\lineaB no esta en sys.path. En modo
+# editable los cambios en fieutils/ se ven al instante, sin reinstalar.
+
+[tool.setuptools]
+# Explicito: las carpetas de los articulos (01-ingenius-P7, etc.) no son
+# paquetes y el autodescubrimiento fallaria al encontrarlas.
+packages = ["fieutils"]

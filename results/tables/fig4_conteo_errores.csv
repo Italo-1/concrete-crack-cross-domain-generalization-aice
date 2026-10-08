@@ -1,0 +1,2 @@
+architecture,source,target,seed,tp,fp,fn,tn,precision,recall,f1,pair_mean_f1,fp_shown,fn_shown
+efficientnet_b0,metu,sdnet_W,43,54,7,246,293,0.8852459016393442,0.18,0.299168975069252,0.3131153383368143,"[165, 139, 224]","[306, 305, 309]"

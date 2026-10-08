@@ -1,0 +1,4 @@
+group1,group2,meandiff,p-adj,lower,upper,reject
+dentro,entre_campana,-0.2578,0.0,-0.3278,-0.1878,True
+dentro,entre_superficie,-0.2131,0.0,-0.2831,-0.143,True
+entre_campana,entre_superficie,0.0447,0.2125,-0.0179,0.1074,False

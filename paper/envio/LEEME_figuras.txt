@@ -1,0 +1,11 @@
+Generado por src/07_figuras_envio.py. No editar a mano.
+
+Figura | Archivo en el manuscrito | Archivo para el envío | Formato
+Fig. 1 | fig_pipeline.pdf | Fig1.eps | EPS vectorial
+Fig. 2 | figures/fig1_muestras_dominios.pdf | Fig2.tif | TIFF RGB, 600 dpi
+Fig. 3 | figures/fig2_matriz_transferencia.pdf | Fig3.eps | EPS vectorial
+Fig. 4 | figures/fig3_f1_por_particion.pdf | Fig4.eps | EPS vectorial
+Fig. 5 | figures/fig5_precision_recall.pdf | Fig5.eps | EPS vectorial
+Fig. 6 | figures/fig4_errores.pdf | Fig6.tif | TIFF RGB, 600 dpi
+Fig. 7 | figures/fig6_sonda_frente_ajuste.pdf | Fig7.eps | EPS vectorial
+Fig. 8 | figures/fig7_multifuente.pdf | Fig8.eps | EPS vectorial

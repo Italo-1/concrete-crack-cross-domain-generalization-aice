@@ -1,0 +1,5 @@
+Architecture,Cross-surface,SDNET to METU,METU to SDNET
+ResNet-18,0.179 $\pm$ 0.104,\textbf{-0.037 $\pm$ 0.055},\textbf{0.544 $\pm$ 0.183}
+EfficientNet-B0,0.269 $\pm$ 0.119,0.129 $\pm$ 0.163,0.594 $\pm$ 0.152
+MobileNetV3-Small,0.230 $\pm$ 0.116,0.036 $\pm$ 0.120,0.565 $\pm$ 0.154
+ViT-Tiny,\textbf{0.143 $\pm$ 0.062},0.090 $\pm$ 0.202,0.546 $\pm$ 0.190

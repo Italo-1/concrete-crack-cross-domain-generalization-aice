@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{F1-score of the crack class by directional transfer partition (mean $\pm$ SD), with percentile bootstrap 95\% CI and the share of cells above F1 = 0.667, the score of a classifier that labels every image as cracked on these balanced test sets.}
+\label{tab:direccional-resumen}
+\begin{tabular}{lrrrr}
+\toprule
+Partition & n & F1 & 95\% CI & Cells > 0.667 (\%) \\
+\midrule
+Within-domain & 48 & 0.867 $\pm$ 0.082 & 0.845, 0.891 & 100.0 \\
+Cross-surface & 72 & 0.654 $\pm$ 0.092 & 0.632, 0.676 & 48.6 \\
+SDNET to METU & 36 & 0.782 $\pm$ 0.149 & 0.733, 0.831 & 69.4 \\
+METU to SDNET & 36 & 0.437 $\pm$ 0.164 & 0.387, 0.493 & 16.7 \\
+\bottomrule
+\end{tabular}
+\end{table}

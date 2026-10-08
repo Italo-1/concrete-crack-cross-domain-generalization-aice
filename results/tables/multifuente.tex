@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Leave-one-domain-out training on the other three domains, subsampled to the size of a single-source training set (2800 images), against the three single-source models transferring to the same held-out domain (same architecture and seed). Mean $\pm$ SD over 4 architectures x 3 seeds.}
+\label{tab:multifuente}
+\begin{tabular}{lrrrrr}
+\toprule
+Held-out domain & n & F1 three sources & F1 single source (mean) & F1 single source (best) & Recall three sources \\
+\midrule
+SDNET-Deck & 12 & 0.742 $\pm$ 0.025 & 0.582 $\pm$ 0.036 & 0.740 $\pm$ 0.034 & 0.736 $\pm$ 0.054 \\
+SDNET-Pavement & 12 & 0.723 $\pm$ 0.070 & 0.636 $\pm$ 0.075 & 0.717 $\pm$ 0.052 & 0.674 $\pm$ 0.112 \\
+SDNET-Wall & 12 & 0.696 $\pm$ 0.044 & 0.528 $\pm$ 0.041 & 0.684 $\pm$ 0.042 & 0.589 $\pm$ 0.057 \\
+METU & 12 & 0.903 $\pm$ 0.045 & 0.782 $\pm$ 0.077 & 0.941 $\pm$ 0.024 & 0.980 $\pm$ 0.026 \\
+\bottomrule
+\end{tabular}
+\end{table}

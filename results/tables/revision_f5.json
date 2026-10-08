@@ -1,0 +1,184 @@
+{
+  "ic_por_corridas": {
+    "dentro": {
+      "corridas": 48,
+      "f1": 0.8674150269010409,
+      "ci_corridas": [
+        0.8453924887749157,
+        0.891133892609372
+      ]
+    },
+    "entre_superficie": {
+      "corridas": 36,
+      "f1": 0.6543596633321559,
+      "ci_corridas": [
+        0.6312187524156682,
+        0.677603623295651
+      ]
+    },
+    "sdnet_a_metu": {
+      "corridas": 36,
+      "f1": 0.7821639129076209,
+      "ci_corridas": [
+        0.7330009367709701,
+        0.8304002056101638
+      ]
+    },
+    "metu_a_sdnet": {
+      "corridas": 12,
+      "f1": 0.4370759767663293,
+      "ci_corridas": [
+        0.40658198450535804,
+        0.4642722645481019
+      ]
+    }
+  },
+  "contrastes_corrida": [
+    {
+      "a": "dentro",
+      "b": "entre_superficie",
+      "diseno": "paired",
+      "n": 36,
+      "dif": 0.16937032817312975,
+      "ic": [
+        0.14604801475625534,
+        0.1929793168427069
+      ],
+      "estadistico": 0.0,
+      "efecto": 1.0,
+      "medida_efecto": "rank-biserial",
+      "p": 2.9103830456733704e-11,
+      "p_holm": 1.1641532182693481e-10
+    },
+    {
+      "a": "dentro",
+      "b": "sdnet_a_metu",
+      "diseno": "paired",
+      "n": 36,
+      "dif": 0.04156607859766461,
+      "ic": [
+        0.0016211845308356082,
+        0.08249675990403568
+      ],
+      "estadistico": 232.0,
+      "efecto": 0.3033033033033033,
+      "medida_efecto": "rank-biserial",
+      "p": 0.11515166956814937,
+      "p_holm": 0.11515166956814937
+    },
+    {
+      "a": "dentro",
+      "b": "metu_a_sdnet",
+      "diseno": "paired",
+      "n": 12,
+      "dif": 0.5613941563219775,
+      "ic": [
+        0.5343171511911824,
+        0.5916180739424565
+      ],
+      "estadistico": 0.0,
+      "efecto": 1.0,
+      "medida_efecto": "rank-biserial",
+      "p": 0.00048828125,
+      "p_holm": 0.0009765625
+    },
+    {
+      "a": "entre_superficie",
+      "b": "sdnet_a_metu",
+      "diseno": "paired",
+      "n": 36,
+      "dif": -0.12780424957546516,
+      "ic": [
+        -0.18008489671717634,
+        -0.07629337454681134
+      ],
+      "estadistico": 94.0,
+      "efecto": -0.7177177177177178,
+      "medida_efecto": "rank-biserial",
+      "p": 7.190476753748953e-05,
+      "p_holm": 0.0002157143026124686
+    },
+    {
+      "a": "entre_superficie",
+      "b": "metu_a_sdnet",
+      "diseno": "independent (Welch)",
+      "n": "36/12",
+      "dif": 0.21728368656582658,
+      "ic": [
+        0.18183994483845667,
+        0.2557618772687245
+      ],
+      "estadistico": 11.181532312502647,
+      "efecto": 1.0,
+      "medida_efecto": "Cliff's delta",
+      "p": 2.292096405912925e-11,
+      "p_holm": 1.1460482029564624e-10
+    },
+    {
+      "a": "sdnet_a_metu",
+      "b": "metu_a_sdnet",
+      "diseno": "independent (Welch)",
+      "n": "36/12",
+      "dif": 0.3450879361412916,
+      "ic": [
+        0.28980018043071226,
+        0.40262645202498987
+      ],
+      "estadistico": 11.86171919750274,
+      "efecto": 1.0,
+      "medida_efecto": "Cliff's delta",
+      "p": 1.5235386102202515e-15,
+      "p_holm": 9.14123166132151e-15
+    }
+  ],
+  "intervenciones_por_corrida": {
+    "agresivo": {
+      "corridas": 48,
+      "dif": -0.004616460594303522,
+      "ic": [
+        -0.02809290504511769,
+        0.019235924363081858
+      ],
+      "p": 0.7565597214388404,
+      "r_rb": -0.05272108843537415,
+      "p_holm": 0.7565597214388404
+    },
+    "ecualizado": {
+      "corridas": 48,
+      "dif": -0.02651300509979009,
+      "ic": [
+        -0.050581393565749644,
+        -0.0034667719686423994
+      ],
+      "p": 0.04768906570802045,
+      "r_rb": -0.3282312925170068,
+      "p_holm": 0.0953781314160409
+    }
+  },
+  "empates_trivial": {
+    "celdas_f1_igual_2_3": 1,
+    "celdas_por_encima": 66,
+    "celdas_por_debajo": 77,
+    "detalle_empates": [
+      {
+        "arquitectura": "resnet18",
+        "semilla": 43,
+        "dominio_train": "sdnet_D",
+        "dominio_test": "sdnet_P",
+        "tp": 157,
+        "fp": 14,
+        "fn": 143,
+        "tn": 286,
+        "f1": 0.6666666666666666
+      }
+    ]
+  },
+  "entre_superficie_sitio": {
+    "sin_tablero_mismo_sitio": 0.6242667924245858,
+    "con_tablero": 0.6694060987859407,
+    "celdas": [
+      24,
+      48
+    ]
+  }
+}

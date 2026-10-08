@@ -1,0 +1,14 @@
+\begin{table}[htbp]
+\centering
+\caption{Linear probe on frozen ImageNet features (LP) against full fine-tuning (FT). Within-domain F1: FT 0.867, LP 0.851. Per training run and partition: mean out-of-domain F1 and relative drop for each regime, paired difference of the drops with 95\% bootstrap CI, Wilcoxon signed-rank test (Holm over three partitions) and matched-pairs rank-biserial correlation.}
+\label{tab:sonda}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Partition & Runs & F1 FT & F1 LP & Drop FT & Drop LP & Drop FT - LP & 95\% CI & p (Holm) & r\_rb \\
+\midrule
+Cross-surface & 36 & 0.654 & 0.678 & 0.205 & 0.154 & 0.051 & +0.031, +0.070 & $<$0.0001 & 0.811 \\
+SDNET to METU & 36 & 0.782 & 0.828 & 0.055 & -0.030 & 0.085 & +0.046, +0.125 & 0.0003 & 0.697 \\
+METU to SDNET & 12 & 0.437 & 0.402 & 0.562 & 0.597 & -0.034 & -0.073, +0.003 & 0.1514 & -0.487 \\
+\bottomrule
+\end{tabular}
+\end{table}

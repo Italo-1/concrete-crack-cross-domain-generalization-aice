@@ -1,0 +1,224 @@
+{
+  "filas_nuevas_por_condicion (esperado 192)": {
+    "baseline": 192,
+    "agresivo": 192,
+    "ecualizado": 192
+  },
+  "celdas_emparejadas": 576,
+  "diferencia_por_celda": {
+    "media": 0.0014253692777396857,
+    "media_abs": 0.04808198806867379,
+    "max_abs": 0.5420621468926554,
+    "por_condicion_media_abs": {
+      "agresivo": 0.061498927472860565,
+      "baseline": 0.04435380088431221,
+      "ecualizado": 0.03839323584884859
+    }
+  },
+  "nuevo": {
+    "filas_base": 192,
+    "f1_medio_por_particion": {
+      "dentro": 0.8674150269010409,
+      "entre_superficie": 0.6543596633321558,
+      "sdnet_a_metu": 0.7821639129076209,
+      "metu_a_sdnet": 0.4370759767663293
+    },
+    "orden_particiones": [
+      "dentro",
+      "sdnet_a_metu",
+      "entre_superficie",
+      "metu_a_sdnet"
+    ],
+    "contraste_celda": {
+      "sdnet_a_metu vs metu_a_sdnet": {
+        "dif": 0.3450879361412915,
+        "p_holm": 2.667029554890944e-13
+      },
+      "seis": {
+        "dentro vs entre_superficie": {
+          "dif": 0.21305536356888521,
+          "p_holm": 1.0407761182563564e-23
+        },
+        "dentro vs sdnet_a_metu": {
+          "dif": 0.08525111399342,
+          "p_holm": 0.003077632972959311
+        },
+        "dentro vs metu_a_sdnet": {
+          "dif": 0.4303390501347115,
+          "p_holm": 2.2077904139946142e-18
+        },
+        "entre_superficie vs sdnet_a_metu": {
+          "dif": -0.1278042495754652,
+          "p_holm": 3.9470505961623916e-05
+        },
+        "entre_superficie vs metu_a_sdnet": {
+          "dif": 0.2172836865658263,
+          "p_holm": 7.186540685245964e-09
+        },
+        "sdnet_a_metu vs metu_a_sdnet": {
+          "dif": 0.3450879361412915,
+          "p_holm": 2.667029554890944e-13
+        }
+      }
+    },
+    "contraste_corrida": {
+      "sdnet_a_metu vs metu_a_sdnet": {
+        "dif": 0.3450879361412916,
+        "p_holm": 6.094154440881006e-15
+      },
+      "seis": {
+        "dentro vs entre_superficie": {
+          "dif": 0.213055363568885,
+          "p_holm": 5.3454761363755687e-20
+        },
+        "dentro vs sdnet_a_metu": {
+          "dif": 0.08525111399342,
+          "p_holm": 0.003077632972959311
+        },
+        "dentro vs metu_a_sdnet": {
+          "dif": 0.4303390501347116,
+          "p_holm": 1.0334845053246256e-17
+        },
+        "entre_superficie vs sdnet_a_metu": {
+          "dif": -0.127804249575465,
+          "p_holm": 4.905295635842054e-05
+        },
+        "entre_superficie vs metu_a_sdnet": {
+          "dif": 0.21728368656582658,
+          "p_holm": 6.876289217738775e-11
+        },
+        "sdnet_a_metu vs metu_a_sdnet": {
+          "dif": 0.3450879361412916,
+          "p_holm": 6.094154440881006e-15
+        }
+      }
+    },
+    "mitigaciones": {
+      "agresivo": {
+        "n": 144,
+        "dif_media": -0.004616460594303541,
+        "ic95": [
+          -0.02379717993735709,
+          0.014316216724941414
+        ]
+      },
+      "ecualizado": {
+        "n": 144,
+        "dif_media": -0.0265130050997901,
+        "ic95": [
+          -0.046647025479014066,
+          -0.006280092610343659
+        ]
+      }
+    },
+    "fraccion_fuera_sobre_trivial": 0.4583333333333333
+  },
+  "original": {
+    "filas_base": 192,
+    "f1_medio_por_particion": {
+      "dentro": 0.8658563481939336,
+      "entre_superficie": 0.6522478329269608,
+      "sdnet_a_metu": 0.7591583398223732,
+      "metu_a_sdnet": 0.47226877021249014
+    },
+    "orden_particiones": [
+      "dentro",
+      "sdnet_a_metu",
+      "entre_superficie",
+      "metu_a_sdnet"
+    ],
+    "contraste_celda": {
+      "sdnet_a_metu vs metu_a_sdnet": {
+        "dif": 0.28688956960988304,
+        "p_holm": 5.027794006573548e-10
+      },
+      "seis": {
+        "dentro vs entre_superficie": {
+          "dif": 0.21360851526697278,
+          "p_holm": 6.661577890409875e-23
+        },
+        "dentro vs sdnet_a_metu": {
+          "dif": 0.1066980083715603,
+          "p_holm": 0.0013993073599639153
+        },
+        "dentro vs metu_a_sdnet": {
+          "dif": 0.39358757798144334,
+          "p_holm": 1.5176667452320664e-17
+        },
+        "entre_superficie vs sdnet_a_metu": {
+          "dif": -0.10691050689541248,
+          "p_holm": 0.0013993073599639153
+        },
+        "entre_superficie vs metu_a_sdnet": {
+          "dif": 0.17997906271447056,
+          "p_holm": 3.0800100874965905e-07
+        },
+        "sdnet_a_metu vs metu_a_sdnet": {
+          "dif": 0.28688956960988304,
+          "p_holm": 5.027794006573548e-10
+        }
+      }
+    },
+    "contraste_corrida": {
+      "sdnet_a_metu vs metu_a_sdnet": {
+        "dif": 0.28688956960988304,
+        "p_holm": 9.333064349863904e-11
+      },
+      "seis": {
+        "dentro vs entre_superficie": {
+          "dif": 0.21360851526697278,
+          "p_holm": 5.916461442285972e-20
+        },
+        "dentro vs sdnet_a_metu": {
+          "dif": 0.1066980083715603,
+          "p_holm": 0.0015204470734449013
+        },
+        "dentro vs metu_a_sdnet": {
+          "dif": 0.39358757798144334,
+          "p_holm": 2.8024344298528314e-14
+        },
+        "entre_superficie vs sdnet_a_metu": {
+          "dif": -0.10691050689541248,
+          "p_holm": 0.0015204470734449013
+        },
+        "entre_superficie vs metu_a_sdnet": {
+          "dif": 0.17997906271447056,
+          "p_holm": 9.106611002742013e-08
+        },
+        "sdnet_a_metu vs metu_a_sdnet": {
+          "dif": 0.28688956960988304,
+          "p_holm": 9.333064349863904e-11
+        }
+      }
+    },
+    "mitigaciones": {
+      "agresivo": {
+        "n": 144,
+        "dif_media": -0.013696874916669662,
+        "ic95": [
+          -0.03334979499622468,
+          0.005918156322542585
+        ]
+      },
+      "ecualizado": {
+        "n": 144,
+        "dif_media": -0.03039405952085476,
+        "ic95": [
+          -0.053700143916981816,
+          -0.0058403293043982575
+        ]
+      }
+    },
+    "fraccion_fuera_sobre_trivial": 0.4930555555555556
+  },
+  "criterios_cambio_cualitativo": {
+    "a_signo_cambia": false,
+    "a_no_significativo_celda": false,
+    "a_no_significativo_corrida": false,
+    "b_orden_cambia": false,
+    "c_agresivo_deja_de_cruzar_cero": false,
+    "c_ecualizado_cruza_cero_o_positivo": false,
+    "d_fraccion_fuera_de_35_65": false
+  },
+  "hay_cambio_cualitativo": false
+}

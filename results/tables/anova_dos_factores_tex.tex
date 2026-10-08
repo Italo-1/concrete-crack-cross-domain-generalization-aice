@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\caption{Two-way ANOVA fixed a priori on F1-score: architecture (4 levels) x train-test pair (16 levels), with interaction; seed is the replicate (192 observations). Assumption tests fail (see text); conclusions rest on the directional contrasts.}
+\label{tab:anova}
+\begin{tabular}{lrrrr}
+\toprule
+ & df & F & p & Partial eta sq. \\
+\midrule
+Architecture & 3 & 25.95 & $<$0.0001 & 0.38 \\
+Train-test pair & 15 & 160.03 & $<$0.0001 & 0.95 \\
+Architecture x Pair & 45 & 2.79 & $<$0.0001 & 0.50 \\
+Residual & 128 & -- & -- & 0.50 \\
+\bottomrule
+\end{tabular}
+\end{table}

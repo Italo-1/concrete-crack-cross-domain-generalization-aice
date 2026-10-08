@@ -1,0 +1,27 @@
+{
+  "sdnet_D": {
+    "fotos": 54,
+    "fotos_test": 8,
+    "fotos_val": 8,
+    "descartadas_al_recortar_test_val": 10,
+    "train_por_clase_disponible": 1390
+  },
+  "sdnet_P": {
+    "fotos": 104,
+    "fotos_test": 16,
+    "fotos_val": 15,
+    "descartadas_al_recortar_test_val": 4,
+    "train_por_clase_disponible": 1397
+  },
+  "sdnet_W": {
+    "fotos": 72,
+    "fotos_test": 11,
+    "fotos_val": 11,
+    "descartadas_al_recortar_test_val": 14,
+    "train_por_clase_disponible": 1390
+  },
+  "n_train_por_clase_sdnet": 1390,
+  "metu": "sin cambios: no hay foto de origen en el nombre de archivo",
+  "semilla": 42,
+  "n_permutaciones": 20000
+}
