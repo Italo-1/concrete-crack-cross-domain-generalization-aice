@@ -28,7 +28,9 @@
 \node[caja, below=of sub] (split) {Split 70/15/15\\(test: 300 + 300)\\photo-grouped split as\\sensitivity check};
 
 % Columna 3: regimenes de entrenamiento
-\node[grupo, right=6mm of dedup] (ft) {Fine-tuning on one\\source domain: baseline,\\aggressive augmentation,\\histogram equalization,\\random rescaling};
+% 11 mm (no 6): la flecha que entra al recuadro de los regimenes necesita
+% recorrido horizontal para no quedar pegada al borde (pedido del usuario, 08/10).
+\node[grupo, right=11mm of dedup] (ft) {Fine-tuning on one\\source domain: baseline,\\aggressive augmentation,\\histogram equalization,\\random rescaling};
 \node[grupo, below=of ft] (lp) {Linear probe,\\frozen ImageNet\\features};
 \node[grupo, below=of lp] (loo) {Three sources,\\leave one domain out\\(2800 training images)};
 \node[draw, dashed, inner sep=3pt, fit=(ft)(lp)(loo), label={[font=\footnotesize, align=center]above:4 architectures $\times$ 3 seeds}] (reg) {};
@@ -41,7 +43,7 @@
 \draw[flecha] (datos.east |- dedup.west) -- (dedup.west);
 \draw[flecha] (dedup) -- (sub);
 \draw[flecha] (sub) -- (split);
-\draw[flecha] (split.east) -- ++(4mm,0) |- (reg.west);
+\draw[flecha] (split.east) -- ++(4mm,0) |- ([xshift=-0.4pt]reg.west);
 \draw[flecha] (reg.east |- eval.west) -- (eval.west);
 \draw[flecha] (eval) -- (metr);
 \draw[flecha] (metr) -- (stat);
