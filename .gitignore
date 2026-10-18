@@ -38,3 +38,24 @@ paper/*.blg
 paper/*.out
 paper/*.synctex.gz
 paper/*.toc
+
+# Documentos internos del proceso (protocolo y bitacora, ficha de la revista,
+# tramite de envio, cartas, revisiones): se mantienen solo en local, como en la
+# linea A. README.md es la portada publica del paquete de reproduccion.
+PROTOCOLO.md
+BITACORA.md
+ENVIO.md
+JOURNAL.md
+paper/cover_letter.md
+paper/declaraciones.md
+paper/tramite/
+paper/envio/
+paper/evidencia/
+paper/revision/
+firmas/
+~$*
+
+# Copias de respaldo y scripts de correccion puntual del manuscrito
+*antes_revision_cruzada*
+paper/corregir_*.py
+paper/aplicar_revision_cruzada.py

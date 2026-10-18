@@ -39,7 +39,11 @@ from fieutils import stats as fstats
 from fieutils.config import SEMILLA, configurar_log
 
 RAIZ = Path(__file__).resolve().parent.parent
-DATOS = Path(r"C:\lineaB\03-tehnicki-glasnik-P1\data\processed")
+# Imagenes preprocesadas: la copia local del estudio original (P1) si existe;
+# si no, las que dejan 01_download.py y 02_preprocess.py de este repositorio
+# en data/processed/ (los dos scripts son identicos a los de P1).
+_DATOS_P1 = Path(r"C:\lineaB\03-tehnicki-glasnik-P1\data\processed")
+DATOS = _DATOS_P1 if (_DATOS_P1 / "manifiesto.csv").exists() else RAIZ / "data" / "processed"
 TABLAS = RAIZ / "results" / "tables"
 PREDICCIONES = RAIZ / "results" / "predicciones"
 DESTINO = RAIZ / "results" / "figures"
